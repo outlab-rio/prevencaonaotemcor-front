@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 30px 5vw;
+}
+header img {
+  max-height: 65px;
+}
+header nav {
+  margin-top: 25px;
+}
+header nav a {
+  color: #fff;
+  margin: 0px 0vw;
+  padding: 0px 1.5vw;
+  border-right: 1px solid #fff;
+}
+header nav a:hover {
+  color: var(--pink);
+}
+header nav a:last-child {
+  border: none;
+}
