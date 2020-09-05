@@ -1,0 +1,39 @@
+.video{
+  position: relative;
+  height: 100vh;
+  top: -130px;
+  width: 100%;
+  video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    opacity: 0.7;
+  }
+  .overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 1;
+    z-index: 7;
+    background: #905e9e;
+    mix-blend-mode: multiply;
+  }
+  .content{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 40vh;
+    p{
+      color: var(--white);
+      margin-top: 50px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      line-height: 24px;
+      font-size: 14px;
+    }
+  }
+}

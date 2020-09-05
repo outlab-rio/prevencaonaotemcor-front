@@ -26,9 +26,29 @@ a {
 .content {
   width: 1080px;
   margin: 0px auto;
+  position: relative;
+  z-index: 100;
 }
 .clear {
   clear: both;
+}
+.button {
+  display: inline-block;
+  text-align: center;
+  border-radius: 50px;
+  margin: 20px auto;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: all ease 0.2s;
+  letter-spacing: 5px;
+}
+.button.border {
+  color: var(--white);
+  border: 2px solid #fff;
+}
+.button.border:hover {
+  background: var(--white);
+  color: var(--purple);
 }
 :root {
   --pink: #ef7e91;
