@@ -50,6 +50,25 @@ a {
   background: var(--white);
   color: var(--purple);
 }
+::selection {
+  background: var(--blue);
+  color: var(--white);
+}
+::-moz-selection {
+  background: var(--blue);
+}
+input,
+button {
+  font-family: 'Asap', sans-serif;
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
 :root {
   --pink: #ef7e91;
   --blue: #6897ea;
