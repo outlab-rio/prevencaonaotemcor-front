@@ -1,0 +1,30 @@
+.estatistics {
+  margin: 50px 0px;
+}
+.estatistics h1 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: normal;
+}
+.estatistics .sides {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.estatistics .sides section {
+  width: 45%;
+}
+.estatistics .sides section p {
+  font-size: 22px;
+  line-height: 42px;
+  text-transform: initial;
+}
+.estatistics .sides .left p {
+  color: var(--blue);
+  text-align: right;
+}
+.estatistics .sides .right p {
+  color: var(--pink);
+  text-align: left;
+}

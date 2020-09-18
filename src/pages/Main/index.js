@@ -1,43 +1,23 @@
 import React from 'react';
-import Slider from "react-slick";
 
 import "../../../node_modules/slick-carousel/slick/slick.css"; 
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 
 import './style.css';
 import Header from '../../components/Header'
+import PreventionSection from '../../components/Prevention'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCamera, faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 import { faFolder } from '@fortawesome/free-regular-svg-icons'
 
 import videotest from '../../assets/images/test-video.mp4'
-import doctor from '../../assets/images/doctor.jpg'
 
 import halfpink from '../../assets/images/half-circle-solid-pink.svg'
 import doubleblue from '../../assets/images/double-circle-solid-blue.svg'
 import doublepink from '../../assets/images/double-circle-solid-pink.svg'
 
 function App() {
-
-  const settings = {
-    //dots: true,
-    arrows: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
-
-  const centerSlide = {
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 3,
-    speed: 500,
-    arrows: true
-  };
 
   return (
     <div className="App">
@@ -113,97 +93,7 @@ function App() {
 
       </section>
 
-      <section className="formasdeprevencao">
-
-        <div className="third left">
-
-          <Slider {...settings}>
-
-            <div>
-
-              <h4>Consulta anual ao urologista</h4>
-
-              <p>Aos que possuem histórico na família desse tipo de tumor, recomenda-se a visita ao urologista a partir de 45 anos. para isso, manter em dia a consulta com o urologista é fundamental. Incentive todos os homens com quem você convive a tornar um hábito de vida essa opção.</p>
-
-            </div>
-
-            <div>
-
-              <h4>Alimentação Saudável</h4>
-
-              <p>é importante deixar de lado os alimentos ultraprocessados, industrializados e bebidas açucaradas. Priorizar uma alimentação mais natural, rica em frutas, legumes, feijões e cereais integrais é essencial.</p>
-
-            </div>
-
-          </Slider>
-
-        </div>
-
-        <div className="third center">
-
-          <h3>Formas de<br/><strong>Prevenção</strong></h3>
-
-          <p>O tratamento ao câncer de mama e ao de próstata tem muito mais probabilidade de sucesso se as doenças forem diagnosticados precocemente.
-          <br/><strong>Faça sua parte: informe-se e compartilhe com amigos e familiares.</strong></p>
-
-        </div>
-
-        <div className="third right">
-
-          <Slider {...settings}>
-
-            <div>
-
-              <h4>Consulta anual ao urologista</h4>
-
-              <p>Aos que possuem histórico na família desse tipo de tumor, recomenda-se a visita ao urologista a partir de 45 anos. para isso, manter em dia a consulta com o urologista é fundamental. Incentive todos os homens com quem você convive a tornar um hábito de vida essa opção.</p>
-
-            </div>
-
-            <div>
-
-              <h4>Alimentação Saudável</h4>
-
-              <p>é importante deixar de lado os alimentos ultraprocessados, industrializados e bebidas açucaradas. Priorizar uma alimentação mais natural, rica em frutas, legumes, feijões e cereais integrais é essencial.</p>
-
-            </div>
-
-          </Slider>
-
-        </div>
-
-      </section>
-
-      <section className="dicas">
-
-        <div className="content">
-
-          <h3>Confira as dicas dos nossos médicos</h3>
-
-          <Slider {...centerSlide}>
-            <div>
-              <img src={doctor} alt="doctor" />
-            </div>
-            <div>
-            <img src={doctor} alt="doctor" />
-            </div>
-            <div>
-            <img src={doctor} alt="doctor" />
-            </div>
-            <div>
-            <img src={doctor} alt="doctor" />
-            </div>
-            <div>
-            <img src={doctor} alt="doctor" />
-            </div>
-            <div>
-            <img src={doctor} alt="doctor" />
-            </div>
-          </Slider>
-
-        </div>
-
-      </section>
+      <PreventionSection />      
 
     </div>
   );

@@ -1,0 +1,77 @@
+.sinals {
+  margin: 50px auto 100px auto !important;
+}
+.sinals h1 {
+  font-weight: normal;
+  padding: 80px 20px;
+  border-radius: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: var(--white);
+}
+.sinals section {
+  width: 430px;
+  border-radius: 1000px;
+  color: var(--white);
+  height: 430px;
+  padding: 100px;
+}
+.sinals section h2 {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: normal;
+}
+.sinals section ul {
+  margin: 20px auto 20px auto;
+  list-style: none;
+}
+.sinals section ul li {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.sinals section p {
+  font-size: 12px;
+  line-height: 18px;
+}
+.sinals .left {
+  background: var(--blue);
+  text-align: right;
+  margin-left: -8vw;
+  float: left;
+}
+.sinals .left ul li::after {
+  content: "\2022";
+  color: var(--white);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-right: -1em;
+}
+.sinals .left h2,
+.sinals .left ul,
+.sinals .left p {
+  padding-right: 40px;
+}
+.sinals .right {
+  background: var(--pink);
+  margin-right: -8vw;
+  float: right;
+}
+.sinals .right ul li::before {
+  content: "\2022";
+  color: var(--white);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.sinals .right h2,
+.sinals .right ul,
+.sinals .right p {
+  padding-left: 40px;
+}
