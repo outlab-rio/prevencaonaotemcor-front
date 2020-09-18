@@ -6,6 +6,11 @@ header {
   position: relative;
   z-index: 200;
 }
+header a.logo {
+  display: block;
+  width: 100px;
+  height: 65px;
+}
 header img {
   max-height: 65px;
 }
