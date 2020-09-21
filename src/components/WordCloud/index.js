@@ -7,37 +7,53 @@ function WordCloud(){
 
   const words = [
     {
-      text: 'told',
-      value: 64,
+      text: 'AJUDA',
+      value: 3,
     },
     {
-      text: 'mistake',
-      value: 11,
+      text: 'CARINHO',
+      value: 8,
     },
     {
-      text: 'thought',
-      value: 16,
+      text: 'VIDA',
+      value: 5,
     },
     {
-      text: 'bad',
+      text: 'SOLIDARIEDADE',
       value: 17,
     },
     {
-      text: 'told',
-      value: 64,
-    },
-    {
-      text: 'mistake',
-      value: 11,
-    },
-    {
-      text: 'thought',
+      text: 'FORÇA',
       value: 16,
     },
     {
-      text: 'bad',
+      text: 'LUTA',
+      value: 11,
+    },
+    {
+      text: 'SENTIMENTOS',
+      value: 6,
+    },
+    {
+      text: 'FAMÍLIA',
+      value: 9,
+    },
+    {
+      text: 'CARINHO',
+      value: 4,
+    },
+    {
+      text: 'DOR',
+      value: 3,
+    },
+    {
+      text: 'VENCER',
       value: 17,
     },
+    {
+      text: 'AMOR',
+      value: 17,
+    }
   ]
 
   return(

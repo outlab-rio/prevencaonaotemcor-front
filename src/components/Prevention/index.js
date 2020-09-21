@@ -1,6 +1,8 @@
 import React from 'react';
 import Slider from "react-slick";
 
+import './style.css';
+
 import doctor from '../../assets/images/doctor.jpg'
 
 function PreventionSection(){
@@ -28,7 +30,7 @@ function PreventionSection(){
 
     <>
 
-      <section className="formasdeprevencao">
+      <section className="formasdeprevencao" id="prevention">
 
       <div className="third left">
 

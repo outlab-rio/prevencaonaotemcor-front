@@ -10,6 +10,10 @@ import Footer from '../../components/Footer';
 
 import PreventionSection from '../../components/Prevention';
 import WordCloud from '../../components/WordCloud';
+import Sinals from '../../components/Sinals';
+import Risc from '../../components/Risc';
+import Prevention from '../../components/Prevention';
+import Estatistics from '../../components/Estatistics';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCamera, faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
@@ -56,7 +60,7 @@ function App() {
 
       <WordCloud />
 
-      <section className="sendword">
+      <section className="sendword" id="sendword">
 
         <div className="content">
 
@@ -82,7 +86,7 @@ function App() {
 
       </section>
 
-      <section className="quizcall">
+      <section className="quizcall" id="quizcall">
 
         <div className="content">
 
@@ -100,6 +104,12 @@ function App() {
       </section>
 
       <PreventionSection />  
+
+      <Sinals />
+
+      <Risc />
+
+      <Estatistics />
 
       <Footer />    
 
