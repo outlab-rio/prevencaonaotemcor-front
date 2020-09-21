@@ -132,6 +132,7 @@
   padding-bottom: 80px;
   margin-bottom: 250px;
   position: relative;
+  text-align: center;
 }
 .quizcall .halfpink {
   position: absolute;
@@ -142,7 +143,7 @@
 }
 .quizcall .doublepink {
   position: absolute;
-  right: -10vw;
+  right: -7vw;
   bottom: -10vw;
   width: 80px;
 }
@@ -154,16 +155,16 @@
   text-align: center;
   margin-bottom: 30px;
 }
-.quizcall button {
+.quizcall .buttonquiz {
   position: relative;
   margin: 60px auto 20px auto;
-  display: block;
+  display: inline-block;
   z-index: 10;
   border: none;
   background: none;
   cursor: pointer;
 }
-.quizcall button span {
+.quizcall .buttonquiz span {
   position: relative;
   z-index: 30;
   padding-top: 22px;
@@ -175,10 +176,10 @@
   text-shadow: 1px 3px 0px rgba(0, 0, 0, 0.5);
   font-size: 0px;
 }
-.quizcall button:hover span {
+.quizcall .buttonquiz:hover span {
   font-size: 24px;
 }
-.quizcall button:before {
+.quizcall .buttonquiz:before {
   transition: all ease 0.2s;
   position: absolute;
   z-index: 1;
@@ -191,7 +192,7 @@
   background: var(--pink);
   left: 0%;
 }
-.quizcall button:after {
+.quizcall .buttonquiz:after {
   transition: all ease 0.2s;
   z-index: 1;
   position: absolute;
@@ -205,17 +206,17 @@
   mix-blend-mode: multiply;
   right: -50%;
 }
-.quizcall button:hover:after {
+.quizcall .buttonquiz:hover:after {
   width: 180px;
   right: 30%;
 }
-.quizcall button:hover:before {
+.quizcall .buttonquiz:hover:before {
   width: 180px;
   left: 30%;
 }
 .formasdeprevencao {
   padding-bottom: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 115px;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
@@ -244,8 +245,8 @@
 .formasdeprevencao .left h4,
 .formasdeprevencao .right h4 {
   color: #fff;
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 24px;
+  line-height: 40px;
   margin-bottom: 20px;
 }
 .formasdeprevencao .left p,
@@ -302,10 +303,49 @@
   display: block;
   width: 50%;
 }
+.dicas .slick-track {
+  height: 180px !important;
+}
+.dicas .slick-slider .slick-list {
+  height: 250px;
+}
 .dicas .slick-slider .slick-slide {
   padding: 10px;
 }
 .dicas .slick-slider .slick-slide img {
   width: 100%;
   border-radius: 20px;
+}
+.dicas .slick-slider .slick-prev:before {
+  color: #000;
+  top: -10px;
+  position: absolute;
+  left: -30px;
+  content: "<";
+}
+.dicas .slick-slider .slick-next:before {
+  color: #000;
+  top: -10px;
+  position: absolute;
+  right: -30px;
+  content: ">";
+}
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+  .formasdeprevencao .third {
+    max-width: 300px !important;
+  }
+  .formasdeprevencao .left:after {
+    left: -135%;
+    top: -90%;
+    width: 70vw;
+    height: 80vw;
+    border-radius: 150vw;
+  }
+  .formasdeprevencao .right:after {
+    right: -135%;
+    top: -90%;
+    width: 70vw;
+    height: 80vw;
+    border-radius: 150vw;
+  }
 }

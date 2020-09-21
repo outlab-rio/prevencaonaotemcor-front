@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import "../../../node_modules/slick-carousel/slick/slick.css"; 
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
@@ -92,7 +93,7 @@ function App() {
 
           <p><strong>Responda nossas perguntas</strong><br/>e descubra o quanto você conhece<br/>sobre câncer de mama e de próstata.</p>
 
-          <button><span>PARTICIPAR</span></button>
+          <Link to="/quiz" className="buttonquiz"><span>PARTICIPAR</span></Link>
 
         </div>
 
