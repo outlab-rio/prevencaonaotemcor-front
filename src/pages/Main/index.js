@@ -7,7 +7,8 @@ import './style.css';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
-import PreventionSection from '../../components/Prevention'
+import PreventionSection from '../../components/Prevention';
+import WordCloud from '../../components/WordCloud';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCamera, faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
@@ -51,6 +52,8 @@ function App() {
         </div>
 
       </section>
+
+      <WordCloud />
 
       <section className="sendword">
 

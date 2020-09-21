@@ -1,0 +1,48 @@
+.words {
+  position: relative;
+  height: 900px;
+  margin-top: -130px;
+  margin-bottom: 80px;
+}
+.words .wordcloudleft {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: auto !important;
+  height: auto !important;
+}
+.words .wordcloudright {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: auto !important;
+  height: auto !important;
+}
+.worcloudtext {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.worcloudtext p {
+  text-transform: initial;
+}
+.worcloudtext p.pinktext {
+  font-size: 24px;
+  text-align: right;
+  float: left;
+  color: var(--pink);
+}
+.worcloudtext p.bluetext {
+  font-size: 24px;
+  text-align: right;
+  color: var(--blue);
+}
+.worcloudtext h3 {
+  font-size: 240px;
+  text-align: center;
+  font-weight: normal;
+  color: var(--purple);
+  mix-blend-mode: multiply;
+  text-shadow: 15px 0px 0px var(--pink), -10px 0px 0px var(--blue);
+}
