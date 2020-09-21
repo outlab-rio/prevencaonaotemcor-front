@@ -1,3 +1,99 @@
+.quiz:after{
+  position: absolute;
+  right: -25vw;
+  top: 0px;
+  width: 100vh;
+  height: 100vh;
+  background-color: var(--pink);
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border: 0px solid gray;
+  border-bottom: 0;
+  content: '';
+  display: block;
+  transform: rotate(-90deg);
+  mix-blend-mode: multiply;
+}
+.quiz:before{
+  position: absolute;
+  right: 10vw;
+  top: 0px;
+  width: 100vh;
+  height: 100vh;
+  background-color: var(--blue);
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border: 0px solid gray;
+  border-bottom: 0;
+  content: '';
+  display: block;
+  transform: rotate(90deg);
+}
 .quiz{
-  
+  position: relative;
+  overflow: hidden;
+  background: var(--blue);
+  background: -moz-linear-gradient(left, var(--blue) 0%, var(--blue) 50%, #ffffff 50%, #ffffff 100%);
+  background: -webkit-linear-gradient(left, var(--blue) 0%,var(--blue) 50%,#ffffff 50%,#ffffff 100%);
+  background: linear-gradient(to right, var(--blue) 0%,var(--blue) 50%,#ffffff 50%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#ffffff',GradientType=1 );
+  padding: 200px 0px;
+  width: 100%;
+  h2{
+    font-size: 42px;
+    color: var(--white);
+    text-transform: none !important;
+    margin-bottom: 80px;
+  }
+  p{
+    color: var(--white);
+    max-width: 70%;
+    line-height: 26px;
+    font-size: 16px;
+    margin-bottom: 90px;
+  }
+  p:before{
+    width: 100px;
+    height: 50px;
+    background-color: var(--pink);
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 0px solid gray;
+    border-bottom: 0;
+    content: '';
+    display: block;
+    transform: rotate(-90deg);
+    float: left;
+    margin-left: -100px;
+  }
+  form{
+    label{
+      color: var(--white);
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+    input{
+      margin-bottom: 30px;
+      margin-right: 20px;
+    }
+    .button{
+      background: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media only screen   
+and (min-width: 1030px)   
+and (max-width: 1366px){
+  .quiz:after{
+    width: 150vh;
+    height: 150vh;
+    right: -45vw;
+
+  }
+  .quiz:before{
+    width: 150vh;
+    height: 150vh;
+  }
 }
