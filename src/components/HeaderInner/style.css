@@ -1,4 +1,4 @@
-.header {
+.headerinner {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -6,26 +6,26 @@
   position: relative;
   z-index: 200;
 }
-.header a.logo {
+.headerinner a.logo {
   display: block;
   width: 100px;
   height: 65px;
 }
-.header img {
+.headerinner img {
   max-height: 65px;
 }
-.header nav {
+.headerinner nav {
   margin-top: 25px;
 }
-.header nav a {
-  color: #fff;
+.headerinner nav a {
+  color: var(--purple);
   margin: 0px 0vw;
   padding: 0px 1.5vw;
   border-right: 1px solid #fff;
 }
-.header nav a:hover {
+.headerinner nav a:hover {
   color: var(--pink);
 }
-.header nav a:last-child {
+.headerinner nav a:last-child {
   border: none;
 }

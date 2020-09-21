@@ -1,7 +1,8 @@
 import React from 'react';
 
 import './style.css';
-import Header from '../../components/Header'
+import HeaderInner from '../../components/HeaderInner'
+import Footer from '../../components/Footer';
 
 function Estatistics() {
 
@@ -9,7 +10,7 @@ function Estatistics() {
 
     <>
 
-      <Header />
+      <HeaderInner />
 
       <section className="estatistics">
 
@@ -36,6 +37,8 @@ function Estatistics() {
         </div>
         
       </section>
+
+      <Footer />
 
     </>
 

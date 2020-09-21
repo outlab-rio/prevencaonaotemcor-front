@@ -4,7 +4,9 @@ import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 
 import './style.css';
-import Header from '../../components/Header'
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
 import PreventionSection from '../../components/Prevention'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -93,7 +95,9 @@ function App() {
 
       </section>
 
-      <PreventionSection />      
+      <PreventionSection />  
+
+      <Footer />    
 
     </div>
   );

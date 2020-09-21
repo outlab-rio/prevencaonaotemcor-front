@@ -1,0 +1,54 @@
+footer {
+  margin-top: 80px;
+  background: var(--blue);
+  background: -moz-linear-gradient(left, var(--blue) 0%, var(--blue) 30%, #ffffff 30%, #ffffff 100%);
+  background: -webkit-linear-gradient(left, var(--blue) 0%, var(--blue) 30%, #ffffff 30%, #ffffff 100%);
+  background: linear-gradient(to right, var(--blue) 0%, var(--blue) 30%, #ffffff 30%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#ffffff', GradientType=1);
+}
+footer .redes {
+  float: left;
+  text-align: center;
+  width: 50%;
+  border-radius: 70px;
+  padding: 40px 0px;
+  color: var(--white);
+  background: var(--blue);
+}
+footer .redes p,
+footer .redes svg {
+  display: inline-block;
+}
+footer .redes p {
+  text-align: right;
+  margin-right: 20px;
+}
+footer .redes a {
+  color: #fff;
+}
+footer .redes a:hover {
+  color: var(--purple);
+}
+footer .redes svg {
+  font-size: 24px;
+  border-radius: 100px;
+  padding: 10px;
+  border: 1px solid #fff;
+  margin: 0px 10px;
+}
+footer .link {
+  width: 50%;
+  float: right;
+  text-align: center;
+  padding: 40px 0px;
+}
+footer .link a {
+  text-transform: uppercase;
+  color: var(--purple);
+  margin-top: 15px;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+footer .link a:hover {
+  color: var(--blue);
+}

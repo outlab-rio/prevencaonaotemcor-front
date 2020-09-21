@@ -5,16 +5,16 @@ import { Link } from 'react-router-dom';
 
 //
 
-import logoSC from '../../assets/images/logo-sao-carlos.svg'
-import ribbon from '../../assets/images/cancer-ribbon.png'
+import logoSC from '../../assets/images/logo-sao-carlos-color.svg'
+import ribbon from '../../assets/images/cancer-ribbon-inner.png'
 
 //
 
-const Header = () => {
+const HeaderInner = () => {
 
   return(
 
-    <header className="header">
+    <header className="headerinner">
 
       <Link to="/" className="logo">
         <img src={logoSC} alt="São Carlos - Saúde Oncológica" />
@@ -38,4 +38,4 @@ const Header = () => {
 
 };
 
-export default Header;
+export default HeaderInner;

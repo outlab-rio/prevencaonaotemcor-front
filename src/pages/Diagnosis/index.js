@@ -1,7 +1,8 @@
 import React from 'react';
 
 import './style.css';
-import Header from '../../components/Header'
+import HeaderInner from '../../components/HeaderInner';
+import Footer from '../../components/Footer';
 
 function Diagnosis() {
 
@@ -9,12 +10,14 @@ function Diagnosis() {
 
     <>
 
-      <Header />
+      <HeaderInner />
 
       <section className="diagnosis">
 
         
       </section>
+
+      <Footer />
 
     </>
 
