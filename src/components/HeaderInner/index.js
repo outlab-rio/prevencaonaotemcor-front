@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 
 import { Link } from 'react-router-dom';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 //
 
@@ -23,11 +24,10 @@ const HeaderInner = () => {
 
       <nav>
         <Link to="/quiz">QUIZ</Link>
-        <Link to="/sinais-e-sintomas">SINAIS E SINTOMAS</Link>
-        <Link to="/fatores-de-risco">FATORES DE RISCO</Link>
-        <Link to="/formas-de-prevencao">FORMAS DE PREVENÇÂO</Link>
-        <Link to="/estatisticas">ESTATÍSTICAS</Link>
-        <Link to="/diagnostico">DIAGNÓSTICO</Link>
+        <Link to="/#sinals">SINAIS E SINTOMAS</Link>
+        <Link to="/#risc">FATORES DE RISCO</Link>
+        <Link to="/#prevention">FORMAS DE PREVENÇÂO</Link>
+        <Link to="/#estatistics">ESTATÍSTICAS</Link>
       </nav>
 
       <img src={ribbon} alt="Prevenção não tem cor" />

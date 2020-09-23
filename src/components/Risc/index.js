@@ -20,13 +20,15 @@ function Risc() {
 
             <ul>
 
-              <li>Aos que possuem histórico na família desse tipo de tumor, recomenda-se a visita ao urologista a partir dos 45 anos.</li>
+              <li>Homens com mais de 50 anos têm aumentada significativamente a probabilidade do desenvolvimento do câncer de próstata.</li>
 
-              <li>Aos que possuem histórico na família desse tipo de tumor, recomenda-se a visita ao urologista a partir dos 45 anos.</li>
+              <li>O excesso de gordura corporal pode elevar o risco do câncer de próstata avançado.</li>
 
-              <li>Aos que possuem histórico na família desse tipo de tumor, recomenda-se a visita ao urologista a partir dos 45 anos.</li>
+              <li>Além de provocar o aumento de peso, o sedentarismo amplia a possibilidade do desenvolvimento de doenças crônicas, como o câncer de próstata. </li>
 
-              <li>Aos que possuem histórico na família desse tipo de tumor, recomenda-se a visita ao urologista a partir dos 45 anos.</li>
+              <li>O álcool tem efeito cancerígeno sobre as células, e ingeri-lo em excesso pode desencadear o câncer.</li>
+
+              <li>Homens que tenham histórico familiar, como avô, pai ou irmão diagnosticado com câncer de próstata antes dos 60 anos de idade, têm maior tendência a desenvolver o câncer de próstata.</li>
 
             </ul>
 
@@ -34,17 +36,21 @@ function Risc() {
 
           <section className="right">
 
-            <h2><strong>Câncer</strong> de Próstata</h2>
+            <h2><strong>Câncer</strong> de Mama</h2>
 
             <ul>
 
-              <li>Aos que possuem histórico na família desse tipo de tumor, recomenda-se a visita ao urologista a partir dos 45 anos.</li>
+              <li>Mulheres com mais de 50 anos possuem maior probabilidade de desenvolver o câncer de mama;</li>
 
-              <li>Aos que possuem histórico na família desse tipo de tumor, recomenda-se a visita ao urologista a partir dos 45 anos.</li>
+              <li>Mulheres que alcançaram o sobrepeso após a menopausa têm aumentadas as chances de adquirirem o câncer de mama;</li>
 
-              <li>Aos que possuem histórico na família desse tipo de tumor, recomenda-se a visita ao urologista a partir dos 45 anos.</li>
+              <li>Sedentarismo;</li>
 
-              <li>Aos que possuem histórico na família desse tipo de tumor, recomenda-se a visita ao urologista a partir dos 45 anos.</li>
+              <li>Consumo de bebidas alcoólicas em excesso;</li>
+
+              <li>Fatores genéticos e hereditários: mulheres que tenham parentes em primeiro grau com histórico de câncer de ovário ou câncer de mama antes dos 50 anos possuem maior probabilidade de desenvolver o tumor.</li>
+
+              <li>Menstruação precoce (antes dos 12 anos de idade), menopausa tardia (após os 55 anos), primeira gravidez após os 30 anos, uso de contraceptivos orais e terapia de reposição hormonal pós-menopausa (principalmente, por mais de 5 anos): todos esses fatores podem elevar o risco do desenvolvimento do câncer de mama na mulher.</li>
 
             </ul>
 
