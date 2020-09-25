@@ -58,9 +58,7 @@ function App() {
 
       </section>
 
-      <WordCloud />
-
-      <section className="sendword" id="sendword">
+      <section className="sendword">
 
         <div className="content">
 
@@ -68,15 +66,19 @@ function App() {
 
           <img src={doubleblue} alt="" className="doubleblue" />
 
-          <p>A São Carlos criou a campanha Prevenção Não Tem Cor para mostrar a importância do cuidado com você e com quem você ama. Misturamos rosa com azul para conscientizar que não é apenas sobre o câncer de mama e o de próstata. É sobre um se importar com o outro. Homens e mulheres valorizando, acima de tudo, a vida. <strong>Participe da nossa campanha,</strong> grave um vídeo sobre a importância da prevenção e divida com os outros uma mensagem sobre esse tema importantíssimo.</p>
+          <p>A São Carlos criou a campanha prevenção não tem cor para mostrar a importância do cuidado com você e com quem você ama. Misturamos rosa com azul para conscientizar que outubro rosa e novembro azul não é apenas sobre o câncer de mama e o de próstata. É sobre um se importar com o outro. Homens e mulheres valorizando, acima de tudo, a vida. <strong>Participe da nossa campanha!</strong></p>
           
-          <p>Somos homens conscientes.  Somos mulheres prevenidas.</p>
-          
-          <p><strong>Somos família. Somos São Carlos.</strong></p>
+        </div>
 
-          <hr/>
+      </section>
 
-          <h3><strong>Diga em uma palavra</strong> o que é mais importante<br/>para a prevenção do câncer.</h3>
+      <WordCloud />
+
+      <section className="sendword" id="sendword">
+
+        <div className="content">
+
+          <h3>Diga em uma palavra o que significa o cancêr para você</h3>
 
           <form>
             <input type="text" placeholder="DIGITE AQUI" />
@@ -86,6 +88,8 @@ function App() {
 
       </section>
 
+      <PreventionSection />  
+
       <section className="quizcall" id="quizcall">
 
         <div className="content">
@@ -93,23 +97,23 @@ function App() {
           <img src={halfpink} alt="" className="halfpink" />
           <img src={doublepink} alt="" className="doublepink" />
 
+          <h2>Quizz</h2>
+
           <p>Quanto mais informação você tem,<br/><strong>maior é a chance de cuidar de você<br/>e de quem você ama.</strong></p>
 
           <p><strong>Responda nossas perguntas</strong><br/>e descubra o quanto você conhece<br/>sobre câncer de mama e de próstata.</p>
 
-          <Link to="/quiz" className="buttonquiz"><span>PARTICIPAR</span></Link>
+          <Link to="/quiz" className="buttonquiz"><span>PARTICIPAR DO QUIZ</span></Link>
 
         </div>
 
       </section>
 
-      <PreventionSection />  
-
-      <Sinals />
+      {/* <Sinals />
 
       <Risc />
 
-      <Estatistics />
+      <Estatistics /> */}
 
       <Footer />    
 

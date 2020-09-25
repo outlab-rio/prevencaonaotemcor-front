@@ -23,11 +23,10 @@ const HeaderInner = () => {
       
 
       <nav>
-        <Link to="/quiz">QUIZ</Link>
-        <Link to="/#sinals">SINAIS E SINTOMAS</Link>
-        <Link to="/#risc">FATORES DE RISCO</Link>
-        <Link to="/#prevention">FORMAS DE PREVENÇÂO</Link>
-        <Link to="/#estatistics">ESTATÍSTICAS</Link>
+        <Link to='/quizcall'>QUIZ</Link>
+        <Link to='/#words'>Depoimentos</Link>
+        <Link to='/#sendword'>O que o câncer significa para você</Link>
+        <Link to='/#tips'>Mais sobre o câncer de mama e próstata</Link>
       </nav>
 
       <img src={ribbon} alt="Prevenção não tem cor" />

@@ -4,9 +4,11 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap');
+@font-face{font-family:HeliaCore;src:url(../fonts/HeliaCore-Bold.otf);font-weight:700;}
+@font-face{font-family:HeliaCore;src:url(../fonts/HeliaCore-Light.otf);font-weight:300;}
 
 body{
-  font-family: 'Asap', sans-serif;
+  font-family: HeliaCore, sans-serif;
   color: var(--black);
 }
 
@@ -62,6 +64,10 @@ p,h1,h2,h3,h4{
   text-transform: uppercase;
 }
 
+h2,h3,h4,h5{
+  text-shadow: 4px 0px 0 var(--pink), 2px 0px 2px rgba(206,89,55,0);
+}
+
 // COLORS
 
 :root {
@@ -69,5 +75,5 @@ p,h1,h2,h3,h4{
   --blue: #6897ea;
   --purple: #58167c;
   --white: #fff;
-  --black: #3b3b3b;
+  --black: #969994;
 }

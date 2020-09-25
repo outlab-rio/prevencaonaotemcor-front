@@ -7,17 +7,27 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Asap Regular'), local('Asap-Regular'), url(https://fonts.gstatic.com/s/asap/v12/KFOoCniXp96a-zw.ttf) format('truetype');
+  src: local('Asap Regular'), local('Asap-Regular'), url(https://fonts.gstatic.com/s/asap/v13/KFOoCniXp96a-zw.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Asap';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Asap Bold'), local('Asap-Bold'), url(https://fonts.gstatic.com/s/asap/v12/KFOnCniXp96aw4A7xUw.ttf) format('truetype');
+  src: local('Asap Bold'), local('Asap-Bold'), url(https://fonts.gstatic.com/s/asap/v13/KFOnCniXp96aw4A7xUw.ttf) format('truetype');
+}
+@font-face {
+  font-family: HeliaCore;
+  src: url(../fonts/HeliaCore-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: HeliaCore;
+  src: url(../fonts/HeliaCore-Light.otf);
+  font-weight: 300;
 }
 body {
-  font-family: 'Asap', sans-serif;
+  font-family: HeliaCore, sans-serif;
   color: var(--black);
 }
 a {
@@ -69,10 +79,16 @@ h4 {
   letter-spacing: 4px;
   text-transform: uppercase;
 }
+h2,
+h3,
+h4,
+h5 {
+  text-shadow: 4px 0px 0 var(--pink), 2px 0px 2px rgba(206, 89, 55, 0);
+}
 :root {
   --pink: #ef7e91;
   --blue: #6897ea;
   --purple: #58167c;
   --white: #fff;
-  --black: #3b3b3b;
+  --black: #969994;
 }

@@ -24,11 +24,11 @@ const Header = () => {
 
       <nav>
         <AnchorLink href='#quizcall'>QUIZ</AnchorLink>
-        <AnchorLink href='#sinals'>SINAIS E SINTOMAS</AnchorLink>
-        <AnchorLink href='#risc'>FATORES DE RISCO</AnchorLink>
-        <AnchorLink href='#prevention'>FORMAS DE PREVENÇÂO</AnchorLink>
-        <AnchorLink href='#estatistics'>ESTATÍSTICAS</AnchorLink>
-        {/* <Link to="/quiz"></Link> 
+        <AnchorLink href='#words'>Depoimentos</AnchorLink>
+        <AnchorLink href='#sendword'>O que o câncer significa para você</AnchorLink>
+        <AnchorLink href='#tips'>Mais sobre o câncer de mama e próstata</AnchorLink>
+        {/* <AnchorLink href='#estatistics'>ESTATÍSTICAS</AnchorLink>
+        <Link to="/quiz"></Link> 
         <Link to="/sinais-e-sintomas">SINAIS E SINTOMAS</Link>
         <Link to="/fatores-de-risco">FATORES DE RISCO</Link>
         <Link to="/formas-de-prevencao">FORMAS DE PREVENÇÂO</Link>

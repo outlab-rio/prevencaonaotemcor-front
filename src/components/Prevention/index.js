@@ -30,9 +30,9 @@ function PreventionSection(){
 
     <>
 
-      <section className="formasdeprevencao" id="prevention">
+      {/*<section className="formasdeprevencao" id="prevention">
 
-      <div className="third left">
+       <div className="third left">
 
         <Slider {...settings}>
 
@@ -70,7 +70,7 @@ function PreventionSection(){
 
         </Slider>
 
-      </div>
+      </div> 
 
       <div className="third center">
 
@@ -129,13 +129,13 @@ function PreventionSection(){
 
       </div>
 
-      </section>
+      </section> */}
 
-      <section className="dicas">
+      <section className="dicas" id="tips">
 
       <div className="content">
 
-        <h3>Confira as dicas dos nossos médicos</h3>
+        <h3>SAIBA MAIS SOBRE O<br/>CANCÊR DE MAMA E PRÓSTATA</h3>
 
         <Slider {...centerSlide}>
           <div>
@@ -157,6 +157,14 @@ function PreventionSection(){
             <img src={doctor} alt="doctor" />
           </div>
         </Slider>
+
+        <p>SOMOS HOMENS CONSCIENTES. SOMOS MULHERES PREVENIDAS.</p>
+        
+        <p>SOMOS FAMÍLIA. SOMOS SÃO CARLOS.</p>
+        
+        <p>GRAVE UM DEPOIMENTOSOBRE A IMPORTÂNCIA DA CONSCIENTIZAÇÃO, PREVENÇÃO E COMBATE AO CÂNCER. EXPLIQUE PARA A GENTE QUAL É O SIGNIFICADO DO CÂNCER PARA VOCÊ.</p>
+        
+        <p>COMPARTILHE NAS SUAS REDES SOCIAIS E FAÇA PARTE DESSE VÍDEO COLABORATIVO!</p>
 
       </div>
 

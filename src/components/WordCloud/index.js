@@ -7,58 +7,21 @@ function WordCloud(){
 
   const words = [
     {
-      text: 'AJUDA',
-      value: 3,
-    },
-    {
-      text: 'CARINHO',
-      value: 8,
-    },
-    {
-      text: 'VIDA',
-      value: 5,
-    },
-    {
-      text: 'SOLIDARIEDADE',
-      value: 17,
-    },
-    {
       text: 'FORÇA',
-      value: 16,
-    },
+      value: 8,
+    }
+  ]
+
+  const wordstwo = [
     {
-      text: 'LUTA',
-      value: 11,
-    },
-    {
-      text: 'SENTIMENTOS',
-      value: 6,
-    },
-    {
-      text: 'FAMÍLIA',
-      value: 9,
-    },
-    {
-      text: 'CARINHO',
-      value: 4,
-    },
-    {
-      text: 'DOR',
+      text: 'SUPERAÇÃO',
       value: 3,
-    },
-    {
-      text: 'VENCER',
-      value: 17,
-    },
-    {
-      text: 'AMOR',
-      value: 17,
     }
   ]
 
   return(
 
-    <section className="words">
+    <section className="words" id="words">
 
     <ReactWordcloud
         options={{
@@ -77,10 +40,10 @@ function WordCloud(){
       />
 
       <div className="content worcloudtext">
-        <p className="pinktext">Cuidar de  você<br/>é um gesto de</p>
-        <div className="clear"></div>
-        <h3>Amor</h3>
-        <p className="bluetext">é cuidar de quem<br/>é importante para você</p>
+        {/* <p className="pinktext">Cuidar de  você<br/>é um gesto de</p>
+        <div className="clear"></div> */}
+        <h3>CORAGEM</h3>
+        {/* <p className="bluetext">é cuidar de quem<br/>é importante para você</p> */}
       </div>
 
       <ReactWordcloud
@@ -94,7 +57,7 @@ function WordCloud(){
             allowHTML: false,
           },
         }}
-        words={words}
+        words={wordstwo}
         size={[1000, 100]}
         className="wordcloudleft"
       />

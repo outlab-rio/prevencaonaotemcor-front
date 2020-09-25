@@ -22,6 +22,8 @@
   margin: 0px 0vw;
   padding: 0px 1.5vw;
   border-right: 1px solid #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .headerinner nav a:hover {
   color: var(--pink);
