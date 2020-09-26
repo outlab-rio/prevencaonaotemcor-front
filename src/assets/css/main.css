@@ -2,6 +2,11 @@
   margin: 0px;
   padding: 0px;
 }
+*,
+*:focus,
+*:hover {
+  outline: none;
+}
 @font-face {
   font-family: 'Asap';
   font-style: normal;
@@ -83,7 +88,9 @@ h2,
 h3,
 h4,
 h5 {
-  text-shadow: 4px 0px 0 var(--pink), 2px 0px 2px rgba(206, 89, 55, 0);
+  color: var(--blue);
+  font-weight: normal;
+  text-shadow: -4px 0px 0 var(--pink), 2px 0px 2px rgba(206, 89, 55, 0);
 }
 :root {
   --pink: #ef7e91;
@@ -91,4 +98,5 @@ h5 {
   --purple: #58167c;
   --white: #fff;
   --black: #969994;
+  --bigblack: #3b3b3b;
 }

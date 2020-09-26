@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactWordcloud from 'react-wordcloud';
+
+import Axios from 'axios';
 
 import './style.css'
 
 function WordCloud(){
 
-  const words = [
+  const wordsone = [
     {
       text: 'FORÇA',
       value: 8,
@@ -19,48 +21,38 @@ function WordCloud(){
     }
   ]
 
+  const [words, setWords] = useState([]);
+
+  useEffect(() => {
+
+    const fetchData = async () => {
+      const result = await Axios.get(process.env.REACT_APP_API_BASE_URL + "/words");
+      setWords(result.data);
+      console.log(result.data)
+    };
+ 
+    fetchData();
+  }, []);
+
   return(
 
     <section className="words" id="words">
 
-    <ReactWordcloud
-        options={{
-          colors: ['#ef7e91', '#6897ea'],
-          fontFamily: 'Asap',
-          fontSizes: [30, 40],
-          rotations: 1,
-          rotationAngles: [0, 0],
-          tooltipOptions: {
-            allowHTML: false,
-          },
-        }}
-        words={words}
-        size={[1000, 100]}
-        className="wordcloudright"
-      />
-
       <div className="content worcloudtext">
-        {/* <p className="pinktext">Cuidar de  você<br/>é um gesto de</p>
-        <div className="clear"></div> */}
-        <h3>CORAGEM</h3>
-        {/* <p className="bluetext">é cuidar de quem<br/>é importante para você</p> */}
-      </div>
+      
+        {/* <h3>CORAGEM</h3> */}
 
-      <ReactWordcloud
-        options={{
-          colors: ['#ef7e91', '#6897ea'],
-          fontFamily: 'Asap',
-          fontSizes: [30, 40],
-          rotations: 1,
-          rotationAngles: [0, 0],
-          tooltipOptions: {
-            allowHTML: false,
-          },
-        }}
-        words={wordstwo}
-        size={[1000, 100]}
-        className="wordcloudleft"
-      />
+        <div className="cloud">
+
+          {words.map(item =>
+
+            <p key={item._id}>{item.text}</p>
+
+          )}
+
+        </div>
+      
+      </div>
 
     </section>
 

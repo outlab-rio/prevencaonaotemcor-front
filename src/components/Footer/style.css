@@ -1,17 +1,20 @@
 footer {
-  margin-top: 80px;
   background: var(--blue);
   background: -moz-linear-gradient(left, var(--blue) 0%, var(--blue) 30%, #ffffff 30%, #ffffff 100%);
   background: -webkit-linear-gradient(left, var(--blue) 0%, var(--blue) 30%, #ffffff 30%, #ffffff 100%);
   background: linear-gradient(to right, var(--blue) 0%, var(--blue) 30%, #ffffff 30%, #ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#ffffff', GradientType=1);
+  position: relative;
+  overflow: hidden;
+  max-height: 120px;
 }
 footer .redes {
   float: left;
   text-align: center;
   width: 50%;
-  border-radius: 70px;
-  padding: 40px 0px;
+  border-radius: 250px;
+  padding: 160px 0px;
+  margin-top: -120px;
   color: var(--white);
   background: var(--blue);
 }
@@ -27,7 +30,10 @@ footer .redes a {
   color: #fff;
 }
 footer .redes a:hover {
-  color: var(--purple);
+  color: var(--pink);
+}
+footer .redes a:hover svg {
+  border-color: var(--pink);
 }
 footer .redes svg {
   font-size: 24px;
@@ -44,11 +50,17 @@ footer .link {
 }
 footer .link a {
   text-transform: uppercase;
-  color: var(--purple);
+  color: var(--blue);
   margin-top: 15px;
   display: inline-block;
   letter-spacing: 2px;
 }
 footer .link a:hover {
-  color: var(--blue);
+  color: var(--pink);
+}
+footer .doublecirclespace {
+  position: absolute;
+  right: 5vw;
+  height: 10vh;
+  top: 20px;
 }

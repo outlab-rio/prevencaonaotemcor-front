@@ -79,6 +79,7 @@
   background: var(--pink);
 }
 .dicas {
+  padding-bottom: 40px;
   margin-bottom: 80px;
 }
 .dicas h3 {
@@ -96,6 +97,9 @@
 }
 .dicas .slick-track {
   height: 180px !important;
+}
+.dicas .slick-slider {
+  margin-bottom: 70px;
 }
 .dicas .slick-slider .slick-list {
   height: 250px;

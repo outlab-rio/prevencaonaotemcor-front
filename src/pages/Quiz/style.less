@@ -138,7 +138,8 @@
   overflow: hidden;
   position: relative;
   h2{
-    color: var(--purple);
+    color: var(--blue);
+    text-shadow: -2px 0px 0 var(--pink), 2px 0px 2px rgba(206,89,55,0);
     font-size: 14px;
     background: url('../../assets/images/result-bg.png') no-repeat center center;
     background-size: contain;
@@ -155,7 +156,7 @@
       display: table;
       margin: 50px auto 10px auto;
       padding: 10px 20px;
-      border-radius: 10px;
+      border-radius: 20px;
       border: 1px solid var(--black);
     }
   }
@@ -214,6 +215,35 @@
     mix-blend-mode: multiply;
     right: 0%;
   }
+  .redes{
+    text-align: center;
+    width: 50%;
+    margin: 20px auto 0px auto;
+    p,svg{
+      display: inline-block;
+    }
+    p{
+      text-align: right;
+      margin-right: 20px;
+    }
+    a{
+      color: var(--pink);
+      transition: all ease 0.2s;
+      &:hover{
+        color: var(--blue);
+        svg{
+          border-color: var(--blue);
+        }
+      }
+    }
+    svg{
+      font-size: 24px;
+      border-radius: 100px;
+      padding: 10px;
+      border: 1px solid var(--pink);
+      margin: 0px 10px;
+    }
+  }
 }
 
 @media only screen   
@@ -232,6 +262,9 @@ and (max-width: 1366px){
 }
 
 .react-quiz-container{
+  height: 665px;
+  margin-bottom: 50px;
+  overflow: hidden;
   .tag-container{
     display: none;
   }
@@ -242,8 +275,18 @@ and (max-width: 1366px){
       font-weight: bold;
       color: #fff;
     }
+    h3{
+      text-shadow: none;
+      p{
+        font-size: 24px;
+        line-height: 34px;
+        text-transform: initial;
+        margin-bottom: 40px;
+      }
+    }
   }
   .questionWrapper{
+    padding: 0px;
     .answerBtn{
       background: none;
       color: #fff;

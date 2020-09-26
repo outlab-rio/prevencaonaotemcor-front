@@ -5,6 +5,9 @@ import './style.css';
 import HeaderInner from '../../components/HeaderInner'
 import Footer from '../../components/Footer';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faLinkedin, faInstagram  } from '@fortawesome/free-brands-svg-icons';
+
 function QuizPage() {
 
   const [result, setResult] = useState();
@@ -174,6 +177,16 @@ function QuizPage() {
           <h2>Você acertou<br/><strong>{result}%</strong></h2>
 
           <p className="sharetitle"><span>Compartilhe nas suas redes sociais</span> e ajude quem você ama a se manter previnido.</p>
+
+          <div className="redes">
+
+            <a href="https://www.facebook.com/SaoCarlosSaudeOncologica/" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
+
+            <a href="https://www.linkedin.com/company/saocarlos-saudeoncologica/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+
+            <a href="https://www.instagram.com/saocarlos_saudeoncologica/" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
+
+          </div>
 
           <a href="#" className="button"><span>baixe aqui nosso pdf e saiba mais</span></a>
 

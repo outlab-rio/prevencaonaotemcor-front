@@ -23,7 +23,7 @@ const HeaderInner = () => {
       
 
       <nav>
-        <Link to='/quizcall'>QUIZ</Link>
+        <Link to='/quiz'>QUIZ</Link>
         <Link to='/#words'>Depoimentos</Link>
         <Link to='/#sendword'>O que o câncer significa para você</Link>
         <Link to='/#tips'>Mais sobre o câncer de mama e próstata</Link>

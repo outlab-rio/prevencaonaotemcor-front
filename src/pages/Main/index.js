@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
+import ReactModal from 'react-modal';
 
 import "../../../node_modules/slick-carousel/slick/slick.css"; 
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
@@ -10,55 +12,57 @@ import Footer from '../../components/Footer';
 
 import PreventionSection from '../../components/Prevention';
 import WordCloud from '../../components/WordCloud';
-import Sinals from '../../components/Sinals';
-import Risc from '../../components/Risc';
-import Prevention from '../../components/Prevention';
-import Estatistics from '../../components/Estatistics';
+import SendWord from '../../components/SendWord';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCamera, faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
+import { faCamera, faAngleDoubleDown, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faFolder } from '@fortawesome/free-regular-svg-icons'
 
-import videotest from '../../assets/images/test-video.mp4'
+import videopntc from '../../assets/images/video-pntc.mp4'
 
 import halfpink from '../../assets/images/half-circle-solid-pink.svg'
 import doubleblue from '../../assets/images/double-circle-solid-blue.svg'
 import doublepink from '../../assets/images/double-circle-solid-pink.svg'
+import doublecirclephototwo from '../../assets/images/double-circle-photo-2.png'
+
+import doublecirclezig from '../../assets/images/double-circle-zig-1.png'
+import doublecirclehalf from '../../assets/images/double-circle-half-1.png'
+import halfzigblue from '../../assets/images/half-circle-zig-blue.png'
+import doublecirclephotoone from '../../assets/images/double-circle-photo-1.png'
 
 function App() {
+
+  const [showModal, setshowModal] = useState(false);
 
   return (
     <div className="App">
 
       <Header />
 
-      <section className="video">
-
-        <video loop autoPlay muted >
-          <source src={videotest} type="video/mp4" />
-        </video>
-
-        <div className="overlay"></div>
+      <section className="simplewords">
 
         <div className="content">
 
-          <span className="button border">Assista aos depoimentos</span>
+          <img src={doublecirclezig} alt="" className="doublecirclezig" />
+          <img src={doublecirclehalf} alt="" className="doublecirclehalf" />
+          <img src={halfzigblue} alt="" className="halfzigblue" />
+          <img src={doublecirclephotoone} alt="" className="doublecirclephotoone" />
 
-          <p><strong>Grave um depoimento<br/>sobre a importância da conscientização,</strong><br/>compartilhe nas suas redes e faça parte<br/>desse vídeo colaborativo!</p>
-
-          <button className="blue"><FontAwesomeIcon icon={faFolder} /> Procurar</button>
-
-          <button className="pink"><FontAwesomeIcon icon={faCamera} /> Gravar</button>
+          <p className="left">Você precisa se<br/>cuidar com coragem.</p>
 
           <div className="clear"></div>
 
-          <FontAwesomeIcon icon={faAngleDoubleDown} className="goto" />
+          <h3>SUPERAÇÃO</h3>
+
+          <p className="right">Coragem para cuidar<br/>de quem você ama.</p>
+
+          <div className="clear"></div>
 
         </div>
 
       </section>
 
-      <section className="sendword">
+      <section className="about">
 
         <div className="content">
 
@@ -74,21 +78,47 @@ function App() {
 
       <WordCloud />
 
-      <section className="sendword" id="sendword">
+      <SendWord />
+
+      <PreventionSection />  
+
+      <section className="video">
+
+        <video loop autoPlay muted >
+          <source src="https://firebasestorage.googleapis.com/v0/b/prevencao-nao-tem-cor.appspot.com/o/video-pntc.mp4?alt=media&token=78d78c64-cc7d-4172-9139-41029882e4d0" type="video/mp4" />
+        </video>
+
+        <ReactModal 
+           isOpen={showModal}
+           contentLabel="Minimal Modal Example"
+           className="Modal"
+        >
+
+          <FontAwesomeIcon icon={faTimes} onClick={e => setshowModal(false)} />
+        
+          <video controls>
+            <source src="https://firebasestorage.googleapis.com/v0/b/prevencao-nao-tem-cor.appspot.com/o/video-pntc.mp4?alt=media&token=78d78c64-cc7d-4172-9139-41029882e4d0" type="video/mp4" />
+          </video>
+
+        </ReactModal>
+
+        <div className="overlay"></div>
 
         <div className="content">
 
-          <h3>Diga em uma palavra o que significa o cancêr para você</h3>
+          <span className="button border" onClick={e => setshowModal(true)}>Assista aos depoimentos</span>
 
-          <form>
-            <input type="text" placeholder="DIGITE AQUI" />
-          </form>
+          <p><strong>Grave um depoimento<br/>sobre a importância da conscientização,</strong><br/>compartilhe nas suas redes e faça parte<br/>desse vídeo colaborativo!</p>
+
+          <button className="blue"><FontAwesomeIcon icon={faFolder} /> Procurar</button>
+
+          <button className="pink"><FontAwesomeIcon icon={faCamera} /> Gravar</button>
+
+          <div className="clear"></div>
 
         </div>
 
       </section>
-
-      <PreventionSection />  
 
       <section className="quizcall" id="quizcall">
 
@@ -96,6 +126,8 @@ function App() {
 
           <img src={halfpink} alt="" className="halfpink" />
           <img src={doublepink} alt="" className="doublepink" />
+          <img src={doublecirclephototwo} alt="" className="doublecirclephototwo" />
+          <span className="bluecircle"></span>
 
           <h2>Quizz</h2>
 

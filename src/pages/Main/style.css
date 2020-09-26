@@ -1,7 +1,6 @@
 .video {
   position: relative;
   height: 100vh;
-  top: -130px;
   width: 100%;
 }
 .video video {
@@ -70,65 +69,9 @@
   font-size: 32px;
   margin-top: 15vh;
 }
-.sendword {
-  padding-bottom: 80px;
-  margin-bottom: 150px;
-  position: relative;
-}
-.sendword .halfpink {
-  position: absolute;
-  right: -8vw;
-  top: -3vw;
-  width: 80px;
-}
-.sendword .doubleblue {
-  position: absolute;
-  left: -10vw;
-  bottom: -3vw;
-  width: 100px;
-}
-.sendword p {
-  letter-spacing: 4px;
-  line-height: 32px;
-  font-size: 15px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-.sendword hr {
-  width: 50%;
-  margin: 80px auto;
-  border: 1px solid #000;
-  height: 0px;
-  padding: 0px;
-}
-.sendword h3 {
-  letter-spacing: 4px;
-  text-align: center;
-  margin: 0px auto 50px auto;
-  font-size: 52px;
-  margin-bottom: 50px;
-  text-transform: uppercase;
-  color: var(--blue);
-}
-.sendword h3 strong {
-  font-size: 26px;
-  display: block;
-}
-.sendword form input {
-  width: 30%;
-  margin: 20px auto;
-  display: block;
-  border: 3px solid var(--black);
-  padding: 20px;
-  border-radius: 20px;
-  text-align: center;
-  letter-spacing: 4px;
-  font-size: 18px;
-  text-transform: uppercase;
-}
 .quizcall {
   padding-bottom: 80px;
-  margin-bottom: 250px;
+  margin-bottom: 100px;
   position: relative;
   text-align: center;
   padding: 100px 0px;
@@ -136,15 +79,30 @@
 .quizcall .halfpink {
   position: absolute;
   left: 5vw;
-  top: -3vw;
-  width: 70px;
+  top: 1vw;
+  width: 100px;
   transform: rotate(-90deg);
 }
 .quizcall .doublepink {
   position: absolute;
+  right: -5vw;
+  bottom: -5vw;
+  width: 120px;
+}
+.quizcall .doublecirclephototwo {
+  position: absolute;
+  left: -7vw;
+  bottom: 0vw;
+  width: 280px;
+}
+.quizcall .bluecircle {
+  position: absolute;
   right: -7vw;
-  bottom: -10vw;
-  width: 80px;
+  top: 0vw;
+  width: 200px;
+  height: 200px;
+  border-radius: 500px;
+  background: var(--blue);
 }
 .quizcall h2 {
   font-size: 72px;
@@ -205,4 +163,100 @@
   background: var(--blue);
   mix-blend-mode: multiply;
   right: 40%;
+}
+.about {
+  padding: 50px 0px;
+}
+.about .halfpink {
+  position: absolute;
+  right: -7vw;
+  top: -5vw;
+  width: 80px;
+}
+.about .doubleblue {
+  position: absolute;
+  left: -7vw;
+  bottom: -5vw;
+  width: 100px;
+}
+.about p {
+  text-transform: initial;
+  letter-spacing: 4px;
+  line-height: 32px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.simplewords {
+  padding: 80px 0px 150px 0px;
+}
+.simplewords .doublecirclezig {
+  position: absolute;
+  left: 18vw;
+  top: -4vw;
+  width: 150px;
+}
+.simplewords .doublecirclehalf {
+  position: absolute;
+  right: -9vw;
+  top: -5vw;
+  width: 150px;
+}
+.simplewords .halfzigblue {
+  position: absolute;
+  right: 20vw;
+  bottom: -5vw;
+  width: 80px;
+}
+.simplewords .doublecirclephotoone {
+  position: absolute;
+  left: -8vw;
+  bottom: -9vw;
+  width: 200px;
+}
+.simplewords p {
+  font-size: 24px;
+  line-height: 34px;
+  text-transform: initial;
+}
+.simplewords p.left {
+  float: left;
+  color: var(--pink);
+}
+.simplewords p.right {
+  float: right;
+  text-align: left;
+  color: var(--blue);
+}
+.simplewords h3 {
+  font-size: 200px;
+  text-align: center;
+  font-weight: normal;
+  color: var(--blue) !important;
+  text-shadow: -10px 0px 0 var(--pink), 2px 0px 2px rgba(206, 89, 55, 0);
+}
+.Modal {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 60%;
+  display: block;
+  opacity: 1;
+}
+.Modal svg {
+  cursor: pointer;
+  margin: -40px 0px 5px 0px;
+  float: right;
+  font-size: 32px;
+  transition: all ease 0.2s;
+}
+.Modal svg:hover {
+  color: var(--pink);
+}
+.Modal video {
+  width: 100%;
+}
+.ReactModal__Overlay {
+  z-index: 10000;
 }

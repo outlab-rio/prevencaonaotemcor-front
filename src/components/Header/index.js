@@ -6,8 +6,8 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 //
 
-import logoSC from '../../assets/images/logo-sao-carlos.svg'
-import ribbon from '../../assets/images/cancer-ribbon.png'
+import logoSC from '../../assets/images/logo-sao-carlos-color.svg'
+import ribbon from '../../assets/images/cancer-ribbon-inner.png'
 
 //
 

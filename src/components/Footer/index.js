@@ -2,7 +2,9 @@ import React from 'react';
 import './style.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faLinkedin, faInstagram  } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faLinkedin, faInstagram  } from '@fortawesome/free-brands-svg-icons';
+
+import doubleCircleSpace from '../../assets/images/double-circle-space.png';
 
 const Footer = () => {
 
@@ -31,6 +33,8 @@ const Footer = () => {
         <div className="clear"></div>
 
       </div>
+
+      <img src={doubleCircleSpace} alt="" className="doublecirclespace" />
       
     </footer>
 
