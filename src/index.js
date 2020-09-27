@@ -1,15 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import App from './pages/Main/';
-//import Estatistics from './pages/Estatistics'
-//import Diagnosis from './pages/Diagnosis'
-//import Prevention from './pages/Prevention'
 import QuizPage from './pages/Quiz'
-//import Risc from './components/Risc'
 import SendVideo from './pages/SendVideo'
-
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Videos from './pages/Videos';
 
 import './assets/css/main.css'
 
@@ -25,6 +21,7 @@ ReactDOM.render(
           <Route path="/sinais-e-sintomas" component={Sinals} /> */}
           <Route path="/quiz" component={QuizPage} />
           <Route path="/enviar-depoimento" component={SendVideo} />
+          <Route path="/depoimentos" component={Videos} />
       </Switch>
     </ BrowserRouter>
   </>,

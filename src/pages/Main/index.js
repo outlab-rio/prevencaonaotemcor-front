@@ -96,7 +96,7 @@ function App() {
 
           <FontAwesomeIcon icon={faTimes} onClick={e => setshowModal(false)} />
         
-          <video controls>
+          <video controls controlsList="nodownload">
             <source src="https://firebasestorage.googleapis.com/v0/b/prevencao-nao-tem-cor.appspot.com/o/video-pntc.mp4?alt=media&token=78d78c64-cc7d-4172-9139-41029882e4d0" type="video/mp4" />
           </video>
 
@@ -112,7 +112,7 @@ function App() {
 
           <div className="clear"></div>
           
-          <Link to="/enviar-depoimento" className="blue"><FontAwesomeIcon icon={faFolder} /> Procurar</Link>
+          <Link to="/depoimentos" className="blue"><FontAwesomeIcon icon={faFolder} /> Procurar</Link>
 
           <Link to="/enviar-depoimento" className="pink"><FontAwesomeIcon icon={faCamera} /> Gravar</Link>
 

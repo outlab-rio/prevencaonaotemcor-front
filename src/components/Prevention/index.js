@@ -46,42 +46,42 @@ function PreventionSection(){
 
       <ReactModal isOpen={showModal} className="Modal" >
         <FontAwesomeIcon icon={faTimes} onClick={e => setshowModal(false)} />
-        <video controls><source src={videodiagnosticoprostata} type="video/mp4" /></video>
+        <video controls controlsList="nodownload"><source src={videodiagnosticoprostata} type="video/mp4" /></video>
       </ReactModal>
 
       <ReactModal isOpen={showModal2} className="Modal" >
         <FontAwesomeIcon icon={faTimes} onClick={e => setshowModal2(false)} />
-        <video controls><source src={videodiagnosticoprostatatwo} type="video/mp4" /></video>
+        <video controls controlsList="nodownload"><source src={videodiagnosticoprostatatwo} type="video/mp4" /></video>
       </ReactModal>
 
       <ReactModal isOpen={showModal3} className="Modal" >
         <FontAwesomeIcon icon={faTimes} onClick={e => setshowModal3(false)} />
-        <video controls><source src={videoestatisticasprostata} type="video/mp4" /></video>
+        <video controls controlsList="nodownload"><source src={videoestatisticasprostata} type="video/mp4" /></video>
       </ReactModal>
 
       <ReactModal isOpen={showModal4} className="Modal" >
         <FontAwesomeIcon icon={faTimes} onClick={e => setshowModal4(false)} />
-        <video controls><source src={videoriscoprostata} type="video/mp4" /></video>
+        <video controls controlsList="nodownload"><source src={videoriscoprostata} type="video/mp4" /></video>
       </ReactModal>
 
       <ReactModal isOpen={showModal5} className="Modal" >
         <FontAwesomeIcon icon={faTimes} onClick={e => setshowModal5(false)} />
-        <video controls><source src={videoprevencaoprostata} type="video/mp4" /></video>
+        <video controls controlsList="nodownload"><source src={videoprevencaoprostata} type="video/mp4" /></video>
       </ReactModal>
 
       <ReactModal isOpen={showModal6} className="Modal" >
         <FontAwesomeIcon icon={faTimes} onClick={e => setshowModal6(false)} />
-        <video controls><source src={videoestatisticamama} type="video/mp4" /></video>
+        <video controls controlsList="nodownload"><source src={videoestatisticamama} type="video/mp4" /></video>
       </ReactModal>
 
       <ReactModal isOpen={showModal7} className="Modal" >
         <FontAwesomeIcon icon={faTimes} onClick={e => setshowModal7(false)} />
-        <video controls><source src={videoriscomama} type="video/mp4" /></video>
+        <video controls controlsList="nodownload"><source src={videoriscomama} type="video/mp4" /></video>
       </ReactModal>
 
       <ReactModal isOpen={showModal8} className="Modal" >
         <FontAwesomeIcon icon={faTimes} onClick={e => setshowModal8(false)} />
-        <video controls><source src={videosinaismama} type="video/mp4" /></video>
+        <video controls controlsList="nodownload"><source src={videosinaismama} type="video/mp4" /></video>
       </ReactModal>
 
       <section className="dicas" id="tips">
