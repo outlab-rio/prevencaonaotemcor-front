@@ -110,9 +110,11 @@ function App() {
 
           <p><strong>Grave um depoimento<br/>sobre a importância da conscientização,</strong><br/>compartilhe nas suas redes e faça parte<br/>desse vídeo colaborativo!</p>
 
-          <button className="blue"><FontAwesomeIcon icon={faFolder} /> Procurar</button>
+          <div className="clear"></div>
+          
+          <Link to="/enviar-depoimento" className="blue"><FontAwesomeIcon icon={faFolder} /> Procurar</Link>
 
-          <button className="pink"><FontAwesomeIcon icon={faCamera} /> Gravar</button>
+          <Link to="/enviar-depoimento" className="pink"><FontAwesomeIcon icon={faCamera} /> Gravar</Link>
 
           <div className="clear"></div>
 

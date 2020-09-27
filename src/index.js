@@ -7,7 +7,7 @@ import App from './pages/Main/';
 //import Prevention from './pages/Prevention'
 import QuizPage from './pages/Quiz'
 //import Risc from './components/Risc'
-//import Sinals from './pages/Sinals'
+import SendVideo from './pages/SendVideo'
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
@@ -24,6 +24,7 @@ ReactDOM.render(
           <Route path="/fatores-de-risco" component={Risc} />
           <Route path="/sinais-e-sintomas" component={Sinals} /> */}
           <Route path="/quiz" component={QuizPage} />
+          <Route path="/enviar-depoimento" component={SendVideo} />
       </Switch>
     </ BrowserRouter>
   </>,

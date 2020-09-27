@@ -26,7 +26,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  padding-top: 40vh;
+  padding-top: 28vh;
 }
 .video .content p {
   color: var(--white);
@@ -34,8 +34,10 @@
   letter-spacing: 4px;
   line-height: 24px;
   font-size: 14px;
+  margin-bottom: 50px;
 }
-.video .content button {
+.video .content button,
+.video .content a {
   margin-top: 30px;
   background: none;
   color: #fff;
@@ -47,20 +49,24 @@
   transition: all ease 0.2s;
   border-radius: 100px;
 }
-.video .content button.pink {
+.video .content button.pink,
+.video .content a.pink {
   background: var(--pink);
   padding-left: 80px;
   margin-left: -60px;
   mix-blend-mode: multiply;
 }
-.video .content button.blue {
+.video .content button.blue,
+.video .content a.blue {
   padding-right: 80px;
   background: var(--blue);
 }
-.video .content button:hover {
+.video .content button:hover,
+.video .content a:hover {
   background: var(--purple);
 }
-.video .content button svg {
+.video .content button svg,
+.video .content a svg {
   margin: 0px 10px -5px 0px;
   font-size: 28px;
 }
