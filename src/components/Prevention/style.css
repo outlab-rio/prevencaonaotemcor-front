@@ -109,7 +109,12 @@
 }
 .dicas .slick-slider .slick-slide img {
   width: 100%;
+  cursor: pointer;
   border-radius: 20px;
+  transition: all ease 0.2s;
+}
+.dicas .slick-slider .slick-slide img:hover {
+  opacity: 0.5;
 }
 .dicas .slick-slider .slick-prev:before {
   color: #000;

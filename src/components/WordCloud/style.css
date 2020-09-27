@@ -118,6 +118,7 @@
   grid-column-start: 7;
   color: var(--pink);
   font-size: 32px;
+  margin-left: -230px;
 }
 .worcloudtext .cloud p:nth-child(12) {
   grid-row-start: 4;
