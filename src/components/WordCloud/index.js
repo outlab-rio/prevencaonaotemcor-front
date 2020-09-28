@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReactWordcloud from 'react-wordcloud';
+import { Link } from 'react-router-dom';
 
 import Axios from 'axios';
 
@@ -46,7 +47,7 @@ function WordCloud(){
 
           {words.map(item =>
 
-            <p key={item._id}>{item.text}</p>
+            <Link to={'/depoimentos?word=' + item.text} key={item._id}>{item.text}</Link>
 
           )}
 

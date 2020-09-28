@@ -65,7 +65,7 @@ function SendVideo() {
           <form encType="multipart/form-data" onSubmit={handleSubmit(onFileUpload)} id="newvideo">
             <input type="text" name="text" id="text" placeholder="DIGITE AQUI" onChange={e => setText(e.target.value)} />
             <label for='video'><FontAwesomeIcon icon={faVideo} /> Envie seu video</label>
-            <input type="file" name="video" id="video" placeholder="Envie seu video" ref={inputFile} onChange={e => handleSubmit(onFileUpload(e.target.files[0])) } />
+            <input type="file" name="video" id="video" placeholder="Envie seu video" ref={inputFile} onChange={e => onFileUpload(e.target.files[0]) } />
             <button>Enviar</button>
           </form>
 

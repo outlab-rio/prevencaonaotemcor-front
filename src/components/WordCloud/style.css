@@ -23,16 +23,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.worcloudtext p {
+.worcloudtext a {
   text-transform: initial;
 }
-.worcloudtext p.pinktext {
+.worcloudtext a.pinktext {
   font-size: 24px;
   text-align: right;
   float: left;
   color: var(--pink);
 }
-.worcloudtext p.bluetext {
+.worcloudtext a.bluetext {
   font-size: 24px;
   text-align: right;
   color: var(--blue);
@@ -53,109 +53,109 @@
   display: grid;
   height: 500px;
 }
-.worcloudtext .cloud p {
+.worcloudtext .cloud a {
   text-transform: uppercase;
 }
-.worcloudtext .cloud p:nth-child(1) {
+.worcloudtext .cloud a:nth-child(1) {
   grid-row-start: 1;
   grid-column-start: 1;
   color: var(--pink);
   font-size: 26px;
 }
-.worcloudtext .cloud p:nth-child(2) {
+.worcloudtext .cloud a:nth-child(2) {
   grid-row-start: 2;
   grid-column-start: 3;
   color: var(--blue);
   font-size: 32px;
   margin-left: -170px;
 }
-.worcloudtext .cloud p:nth-child(3) {
+.worcloudtext .cloud a:nth-child(3) {
   grid-row-start: 3;
   grid-column-start: 4;
   color: var(--pink);
 }
-.worcloudtext .cloud p:nth-child(4) {
+.worcloudtext .cloud a:nth-child(4) {
   grid-row-start: 1;
   grid-column-start: 6;
   color: var(--blue);
 }
-.worcloudtext .cloud p:nth-child(5) {
+.worcloudtext .cloud a:nth-child(5) {
   grid-row-start: 1;
   grid-column-start: 10;
   color: var(--pink);
   font-size: 32px;
 }
-.worcloudtext .cloud p:nth-child(6) {
+.worcloudtext .cloud a:nth-child(6) {
   grid-row-start: 2;
   grid-column-start: 9;
   color: var(--blue);
   font-size: 24px;
 }
-.worcloudtext .cloud p:nth-child(7) {
+.worcloudtext .cloud a:nth-child(7) {
   grid-row-start: 4;
   grid-column-start: 11;
   color: var(--pink);
 }
-.worcloudtext .cloud p:nth-child(8) {
+.worcloudtext .cloud a:nth-child(8) {
   grid-row-start: 5;
   grid-column-start: 2;
   color: var(--pink);
   font-size: 32px;
 }
-.worcloudtext .cloud p:nth-child(9) {
+.worcloudtext .cloud a:nth-child(9) {
   grid-row-start: 6;
   grid-column-start: 8;
   color: var(--pink);
   font-size: 24px;
 }
-.worcloudtext .cloud p:nth-child(10) {
+.worcloudtext .cloud a:nth-child(10) {
   grid-row-start: 5;
   grid-column-start: 6;
   color: var(--blue);
 }
-.worcloudtext .cloud p:nth-child(11) {
+.worcloudtext .cloud a:nth-child(11) {
   grid-row-start: 3;
   grid-column-start: 7;
   color: var(--pink);
   font-size: 32px;
   margin-left: -230px;
 }
-.worcloudtext .cloud p:nth-child(12) {
+.worcloudtext .cloud a:nth-child(12) {
   grid-row-start: 4;
   grid-column-start: 1;
   color: var(--blue);
   font-size: 24px;
 }
-.worcloudtext .cloud p:nth-child(13) {
+.worcloudtext .cloud a:nth-child(13) {
   grid-row-start: 4;
   grid-column-start: 8;
   color: var(--blue);
   font-size: 32px;
 }
-.worcloudtext .cloud p:nth-child(14) {
+.worcloudtext .cloud a:nth-child(14) {
   grid-row-start: 4;
   grid-column-start: 4;
   color: var(--blue);
 }
-.worcloudtext .cloud p:nth-child(15) {
+.worcloudtext .cloud a:nth-child(15) {
   grid-row-start: 6;
   grid-column-start: 5;
   color: var(--pink);
   font-size: 32px;
 }
-.worcloudtext .cloud p:nth-child(16) {
+.worcloudtext .cloud a:nth-child(16) {
   grid-row-start: 5;
   grid-column-start: 2;
   color: var(--blue);
   font-size: 24px;
 }
-.worcloudtext .cloud p:nth-child(17) {
+.worcloudtext .cloud a:nth-child(17) {
   grid-row-start: 3;
   grid-column-start: 9;
   color: var(--pink);
   font-size: 32px;
 }
-.worcloudtext .cloud p:nth-child(18) {
+.worcloudtext .cloud a:nth-child(18) {
   grid-row-start: 4;
   grid-column-start: 1;
   color: var(--blue);
