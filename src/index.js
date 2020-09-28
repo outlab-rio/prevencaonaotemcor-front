@@ -8,6 +8,7 @@ import SendVideo from './pages/SendVideo'
 import Videos from './pages/Videos';
 
 import './assets/css/main.css'
+import './assets/css/mobile.css'
 
 ReactDOM.render(
   <>
