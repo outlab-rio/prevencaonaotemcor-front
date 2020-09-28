@@ -1,223 +1,225 @@
-h2,
-h3,
-h4,
-h5 {
-  text-shadow: -2px 0px 0 var(--pink), 2px 0px 2px rgba(206, 89, 55, 0);
-}
-.content {
-  width: 80%;
-}
-.button {
-  padding: 10px 20px;
-}
-.header nav,
-.headerinner nav {
-  display: none;
-}
-.simplewords {
-  padding: 50px 0px 50px 0px;
-}
-.simplewords p {
-  font-size: 5vw;
-  line-height: 8vw;
-}
-.simplewords h3 {
-  font-size: 15vw;
-  margin: 20px 0px;
-  text-shadow: -4px 0px 0 var(--pink), 2px 0px 2px rgba(206, 89, 55, 0);
-}
-.simplewords img {
-  display: none;
-}
-.about {
-  padding: 0px;
-}
-.about img {
-  display: none;
-}
-.about p {
-  line-height: 8vw;
-  font-size: 4.5vw;
-}
-.words {
-  height: auto !important;
-}
-.worcloudtext {
-  position: relative !important;
-  left: auto;
-  top: auto;
-  transform: none;
-  width: 90% !important;
-  margin: 0px auto !important;
-}
-.worcloudtext .cloud {
-  height: auto;
-  display: block;
-  text-align: center;
-  margin: 0px auto;
-}
-.worcloudtext .cloud a {
-  display: inline-block;
-  margin: 5px !important;
-}
-.sendword {
-  margin-bottom: 0px;
-}
-.sendword img {
-  display: none;
-}
-.sendword h3 {
-  font-size: 6vw;
-}
-.sendword form input,
-.sendword form button {
-  width: 100%;
-}
-.dicas h3 {
-  font-size: 6vw;
-}
-.dicas p {
-  line-height: 8vw;
-  font-size: 4.5vw;
-}
-.video {
-  height: auto;
-  padding-bottom: 30px;
-}
-.video a {
-  padding: 10px 0px !important;
-  width: 90%;
-  display: block;
-  margin: 10px auto !important;
-}
-.quizcall {
-  padding: 50px 0px;
-  margin-bottom: 0px;
-}
-.quizcall img,
-.quizcall span {
-  display: none;
-}
-.quizcall h2 {
-  font-size: 12vw;
-}
-.quizcall p {
-  line-height: 8vw;
-  font-size: 4.5vw;
-}
-.quizcall .buttonquiz {
-  border-radius: 10px;
-  background: var(--pink);
-}
-.quizcall .buttonquiz span {
-  font-size: 5vw;
-  padding: 20px;
-}
-.quizcall .buttonquiz:after,
-.quizcall .buttonquiz:before {
-  display: none;
-}
-footer {
-  max-height: 100% !important;
-  background: var(--blue) !important;
-}
-footer img {
-  display: none;
-}
-footer .link {
-  width: 100%;
-  float: none;
-}
-footer .link a {
-  color: #fff;
-  text-align: center;
-  font-size: 3vw;
-}
-footer .redes {
-  float: none;
-  width: 100%;
-  margin-top: 20px;
-  padding: 0px;
-}
-footer .redes p {
-  text-align: center;
-  margin-bottom: 20px;
-  margin-right: 0px;
-  width: 100%;
-}
-.dicas .slick-slider .slick-list {
-  height: 200px;
-}
-.slick-prev,
-.slick-next {
-  display: none !important;
-}
-.videos .videolist {
-  display: block;
-}
-.videos .videolist video {
-  width: 100%;
-}
-.sendvideo {
-  padding: 20px 0px;
-}
-.sendvideo h1 {
-  font-size: 5vh;
-  line-height: 10vw;
-}
-.sendvideo form input,
-.sendvideo form button,
-.sendvideo form label {
-  width: 100%;
-}
-.sendvideo form label {
-  padding: 10px 0px;
-}
-.react-quiz-container {
-  height: auto;
-  background: var(--blue) !important;
-}
-.react-quiz-container:before,
-.react-quiz-container:after {
-  display: none;
-}
-.react-quiz-container .questionWrapper {
-  width: 80%;
-  margin: 0px auto;
-}
-.react-quiz-container .questionWrapper .questionWrapperBody {
-  width: 100%;
-}
-.resultbox {
-  padding: 0px 0px;
-}
-.resultbox .redes {
-  width: 100%;
-}
-.resultbox .button {
-  border-radius: 10px;
-  background: var(--pink);
-}
-.resultbox .button span {
-  font-size: 5vw;
-  padding: 0px;
-}
-.resultbox .button:before,
-.resultbox .button:after {
-  display: none;
-}
-.resultbox p.videos {
-  width: 100%;
-  max-width: 100%;
-  padding: 0px;
-  font-size: 5vw;
-  line-height: 10vw;
-}
-.resultbox p.videos strong {
-  font-size: 5vw;
-  line-height: 10vw;
-}
-.resultbox:before,
-.resultbox:after {
-  display: none;
+@media screen and (max-width: 480px) {
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-shadow: -2px 0px 0 var(--pink), 2px 0px 2px rgba(206, 89, 55, 0);
+  }
+  .content {
+    width: 80%;
+  }
+  .button {
+    padding: 10px 20px;
+  }
+  .header nav,
+  .headerinner nav {
+    display: none;
+  }
+  .simplewords {
+    padding: 50px 0px 50px 0px;
+  }
+  .simplewords p {
+    font-size: 5vw;
+    line-height: 8vw;
+  }
+  .simplewords h3 {
+    font-size: 15vw;
+    margin: 20px 0px;
+    text-shadow: -4px 0px 0 var(--pink), 2px 0px 2px rgba(206, 89, 55, 0);
+  }
+  .simplewords img {
+    display: none;
+  }
+  .about {
+    padding: 0px;
+  }
+  .about img {
+    display: none;
+  }
+  .about p {
+    line-height: 8vw;
+    font-size: 4.5vw;
+  }
+  .words {
+    height: auto !important;
+  }
+  .worcloudtext {
+    position: relative !important;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 90% !important;
+    margin: 0px auto !important;
+  }
+  .worcloudtext .cloud {
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+  }
+  .worcloudtext .cloud a {
+    display: inline-block;
+    margin: 5px !important;
+  }
+  .sendword {
+    margin-bottom: 0px;
+  }
+  .sendword img {
+    display: none;
+  }
+  .sendword h3 {
+    font-size: 6vw;
+  }
+  .sendword form input,
+  .sendword form button {
+    width: 100%;
+  }
+  .dicas h3 {
+    font-size: 6vw;
+  }
+  .dicas p {
+    line-height: 8vw;
+    font-size: 4.5vw;
+  }
+  .video {
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .video a {
+    padding: 10px 0px !important;
+    width: 90%;
+    display: block;
+    margin: 10px auto !important;
+  }
+  .quizcall {
+    padding: 50px 0px;
+    margin-bottom: 0px;
+  }
+  .quizcall img,
+  .quizcall span {
+    display: none;
+  }
+  .quizcall h2 {
+    font-size: 12vw;
+  }
+  .quizcall p {
+    line-height: 8vw;
+    font-size: 4.5vw;
+  }
+  .quizcall .buttonquiz {
+    border-radius: 10px;
+    background: var(--pink);
+  }
+  .quizcall .buttonquiz span {
+    font-size: 5vw;
+    padding: 20px;
+  }
+  .quizcall .buttonquiz:after,
+  .quizcall .buttonquiz:before {
+    display: none;
+  }
+  footer {
+    max-height: 100% !important;
+    background: var(--blue) !important;
+  }
+  footer img {
+    display: none;
+  }
+  footer .link {
+    width: 100%;
+    float: none;
+  }
+  footer .link a {
+    color: #fff;
+    text-align: center;
+    font-size: 3vw;
+  }
+  footer .redes {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0px;
+  }
+  footer .redes p {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .dicas .slick-slider .slick-list {
+    height: 200px;
+  }
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+  .videos .videolist {
+    display: block;
+  }
+  .videos .videolist video {
+    width: 100%;
+  }
+  .sendvideo {
+    padding: 20px 0px;
+  }
+  .sendvideo h1 {
+    font-size: 5vh;
+    line-height: 10vw;
+  }
+  .sendvideo form input,
+  .sendvideo form button,
+  .sendvideo form label {
+    width: 100%;
+  }
+  .sendvideo form label {
+    padding: 10px 0px;
+  }
+  .react-quiz-container {
+    height: auto;
+    background: var(--blue) !important;
+  }
+  .react-quiz-container:before,
+  .react-quiz-container:after {
+    display: none;
+  }
+  .react-quiz-container .questionWrapper {
+    width: 80%;
+    margin: 0px auto;
+  }
+  .react-quiz-container .questionWrapper .questionWrapperBody {
+    width: 100%;
+  }
+  .resultbox {
+    padding: 0px 0px;
+  }
+  .resultbox .redes {
+    width: 100%;
+  }
+  .resultbox .button {
+    border-radius: 10px;
+    background: var(--pink);
+  }
+  .resultbox .button span {
+    font-size: 5vw;
+    padding: 0px;
+  }
+  .resultbox .button:before,
+  .resultbox .button:after {
+    display: none;
+  }
+  .resultbox p.videos {
+    width: 100%;
+    max-width: 100%;
+    padding: 0px;
+    font-size: 5vw;
+    line-height: 10vw;
+  }
+  .resultbox p.videos strong {
+    font-size: 5vw;
+    line-height: 10vw;
+  }
+  .resultbox:before,
+  .resultbox:after {
+    display: none;
+  }
 }
