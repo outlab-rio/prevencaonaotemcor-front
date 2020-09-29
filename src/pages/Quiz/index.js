@@ -6,11 +6,19 @@ import HeaderInner from '../../components/HeaderInner'
 import Footer from '../../components/Footer';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faLinkedin, faInstagram  } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faWhatsapp  } from '@fortawesome/free-brands-svg-icons';
+
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+ } from "react-share";
 
 function QuizPage() {
 
   const [result, setResult] = useState();
+
+  const shareText = "Acabei de fazer o Quiz Prevenção Não Tem Cor, e tirei " + result + ". Faça você também!";
 
   const questionsBank = {
     "appLocale": {
@@ -25,17 +33,19 @@ function QuizPage() {
     },
     "questions": [
       {
-        "question": "O autoexame das mamas é o principal método de identificar o câncer de mama.",
+        "question": "O autoexame das mamas é o principal método para identificar o câncer de mama.",
         "questionType": "text",
+        "answerSelectionType": "single",
         "answers": [
           "Verdadeiro",
           "Falso"
         ],
         "correctAnswer": "2",
+        "explanation": "O autoexame das mamas acaba não identificando o tumor em sua fase inicial.",
         "point": "11,1"
       },
       {
-        "question": "O Câncer de mama é um tipo de câncer que só aparece nas mulheres.",
+        "question": "O câncer de mama é um tipo de câncer que só aparece nas mulheres.",
         "questionType": "text",
         "answers": [
           "Verdadeiro",
@@ -79,10 +89,10 @@ function QuizPage() {
       {
         "question": "A partir de qual idade é mais comum a incidência do câncer de mama?",
         "answers": [
-          "A partir dos 40",
-          "A partir dos 45",
-          "A partir dos 50 anos de idade",
-          "A partir dos 60"
+          "A partir dos 40 anos",
+          "A partir dos 45 anos",
+          "A partir dos 50 anos",
+          "A partir dos 60 anos"
         ],
         "questionType": "text",
         "correctAnswer": "3",
@@ -92,10 +102,10 @@ function QuizPage() {
         "question": "A partir de qual idade é mais comum a incidência do câncer de próstata?",
         "questionType": "text",
         "answers": [
-          "A partir dos 40",
-          "A partir dos 45",
-          "A partir dos 60",
-          "A partir dos 65 anos de idade"
+          "A partir dos 40 anos",
+          "A partir dos 45 anos",
+          "A partir dos 60 anos",
+          "A partir dos 65 anos"
         ],
         "correctAnswer": "4",
         "point": "11,1"
@@ -180,19 +190,29 @@ function QuizPage() {
 
           <div className="redes">
 
-            <a href="https://www.facebook.com/SaoCarlosSaudeOncologica/" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
+          <FacebookShareButton className="facebook" url='https://prevencao-nao-tem-cor.web.app/' hashtag="prevencaonaotemcor" quote={shareText}>
+              <FontAwesomeIcon icon={faFacebook} />
+          </FacebookShareButton>
+          <TwitterShareButton url='https://prevencao-nao-tem-cor.web.app/' hashtag="prevencaonaotemcor" title={shareText}>
+              <FontAwesomeIcon icon={faTwitter} />
+          </TwitterShareButton>
+          <WhatsappShareButton url='https://prevencao-nao-tem-cor.web.app/' title={shareText}>
+              <FontAwesomeIcon icon={faWhatsapp} />
+          </WhatsappShareButton>
+
+            {/* <a href="https://www.facebook.com/SaoCarlosSaudeOncologica/" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
 
             <a href="https://www.linkedin.com/company/saocarlos-saudeoncologica/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
 
-            <a href="https://www.instagram.com/saocarlos_saudeoncologica/" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
+            <a href="https://www.instagram.com/saocarlos_saudeoncologica/" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a> */}
 
           </div>
 
-          <a href="#" className="button"><span>baixe aqui nosso pdf e saiba mais</span></a>
+          <a href="#" className="button"><span>baixe aqui nosso e-book e saiba mais</span></a>
 
           <p className="videos"><strong>Quer saber tudo sobre prevenção?</strong></p>
 
-          <p className="videos">Assista aos conteúdos dos nossos especialistas.</p>
+          <p className="videos">Assista aos conteúdos dos nossos médicos.</p>
 
         </div>
 

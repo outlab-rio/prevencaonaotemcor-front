@@ -94,15 +94,16 @@
   line-height: 28px;
   text-align: center;
   margin: 20px 0px;
+  text-transform: initial;
 }
 .dicas .slick-track {
-  height: 180px !important;
+  height: 300px !important;
 }
 .dicas .slick-slider {
   margin-bottom: 70px;
 }
 .dicas .slick-slider .slick-list {
-  height: 250px;
+  height: 300px;
 }
 .dicas .slick-slider .slick-slide {
   padding: 10px;
@@ -115,6 +116,10 @@
 }
 .dicas .slick-slider .slick-slide img:hover {
   opacity: 0.5;
+}
+.dicas .slick-slider .slick-slide p {
+  font-size: 12px;
+  line-height: 20px;
 }
 .dicas .slick-slider .slick-prev:before {
   color: #000;

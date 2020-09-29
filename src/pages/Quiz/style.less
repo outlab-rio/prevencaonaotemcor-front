@@ -163,6 +163,7 @@
   p.videos{
     max-width: 40%;
     margin: 0px auto 20px auto;
+    padding: 0px;
     strong{
       font-size: 32px;
       line-height: 42px;
@@ -226,11 +227,11 @@
       text-align: right;
       margin-right: 20px;
     }
-    a{
-      color: var(--pink);
+    a,button{
+      color: var(--pink) !important;
       transition: all ease 0.2s;
       &:hover{
-        color: var(--blue);
+        color: var(--blue) !important;
         svg{
           border-color: var(--blue);
         }
@@ -292,7 +293,7 @@ and (max-width: 1366px){
       color: #fff;
       border: none;
       font-size: 16px;
-      text-transform: uppercase;
+      text-transform: initial;
       font-weight: normal;
       letter-spacing: 2px;
     }
@@ -308,6 +309,11 @@ and (max-width: 1366px){
     }
     .answerBtn.correct{
       background: none;
+      color: lawngreen;
+    }
+    .answerBtn.incorrect,
+    .answerBtn.undefined{
+      color: red;
     }
     .answerBtn.incorrect:before,
     .answerBtn.correct:before{
@@ -323,7 +329,7 @@ and (max-width: 1366px){
       transition: all ease 0.2s;
       &:hover{
         background: #fff;
-        color: var(--purple);
+        color: var(--blue);
       }
     }
   }

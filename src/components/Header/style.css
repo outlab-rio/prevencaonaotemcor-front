@@ -5,6 +5,9 @@
   padding: 30px 5vw;
   position: relative;
   z-index: 200;
+  background: #fff;
+  position: fixed;
+  width: 90%;
 }
 .header a.logo {
   display: block;

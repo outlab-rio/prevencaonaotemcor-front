@@ -31,9 +31,10 @@
 .video .content p {
   color: var(--white);
   margin-top: 50px;
+  text-transform: initial;
   letter-spacing: 4px;
-  line-height: 24px;
-  font-size: 14px;
+  line-height: 32px;
+  font-size: 16px;
   margin-bottom: 50px;
 }
 .video .content button,
@@ -117,9 +118,10 @@
   color: var(--blue);
 }
 .quizcall p {
+  text-transform: initial;
   letter-spacing: 4px;
   line-height: 32px;
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -194,7 +196,7 @@
   margin-bottom: 30px;
 }
 .simplewords {
-  padding: 80px 0px 150px 0px;
+  padding: 250px 0px 150px 0px;
 }
 .simplewords .doublecirclezig {
   position: absolute;
@@ -219,6 +221,9 @@
   left: -8vw;
   bottom: -9vw;
   width: 200px;
+}
+.simplewords #wordthree {
+  text-transform: capitalize;
 }
 .simplewords p {
   font-size: 24px;

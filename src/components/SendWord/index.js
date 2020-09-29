@@ -8,11 +8,26 @@ import "./style.css";
 import halfpink from '../../assets/images/half-circle-solid-pink.svg'
 import halfdashedpink from '../../assets/images/half-circle-dashed-pink.svg'
 
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+} from "react-share";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faTwitter, faWhatsapp  } from '@fortawesome/free-brands-svg-icons';
+
+import ReactModal from 'react-modal';
+
 const SendWord = () => {
 
   const [text, setText] = useState([]);
+  const [showModal, setshowModal] = useState(false);
 
   const { handleSubmit } = useForm();
+
+  const shareText = "Para mim, a palavra que representa o Câncer é " + text + ". E para você? Participe da campanha Prevenção Não Tem Cor";
 
   function newServiceForm() {
       
@@ -28,7 +43,8 @@ const SendWord = () => {
       text
     }, axiosConfig)
     .then((res) => {
-      window.location.reload();
+      //window.location.reload();
+      setshowModal(true)
     })
     .catch((error) => {
         console.log(error.response.data.error);
@@ -42,6 +58,28 @@ const SendWord = () => {
     <section className="sendword" id="sendword">
 
       <div className="content">
+
+        <ReactModal 
+           isOpen={showModal}
+           contentLabel="Minimal Modal Example"
+           className="ModalShare"
+        >
+
+          <FontAwesomeIcon icon={faTimes} onClick={e => setshowModal(false)} />
+        
+          <p>Para você, a palavra que representa o Câncer é <strong>{text}</strong>.<br/>Compartilhe em suas redes sociais:</p>
+
+          <FacebookShareButton className="facebook" url='https://prevencao-nao-tem-cor.web.app/' hashtag="prevencaonaotemcor" quote={shareText}>
+              <FontAwesomeIcon icon={faFacebook} />
+          </FacebookShareButton>
+          <TwitterShareButton url='https://prevencao-nao-tem-cor.web.app/' hashtag="prevencaonaotemcor" title={shareText}>
+              <FontAwesomeIcon icon={faTwitter} />
+          </TwitterShareButton>
+          <WhatsappShareButton url='https://prevencao-nao-tem-cor.web.app/' title={shareText}>
+              <FontAwesomeIcon icon={faWhatsapp} />
+          </WhatsappShareButton>
+
+        </ReactModal>
 
         <img src={halfpink} alt="" className="halfpink" />
         <img src={halfdashedpink} alt="" className="halfdashedpink" />

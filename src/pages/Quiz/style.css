@@ -156,6 +156,7 @@
 .resultbox p.videos {
   max-width: 40%;
   margin: 0px auto 20px auto;
+  padding: 0px;
 }
 .resultbox p.videos strong {
   font-size: 32px;
@@ -221,14 +222,17 @@
   text-align: right;
   margin-right: 20px;
 }
-.resultbox .redes a {
-  color: var(--pink);
+.resultbox .redes a,
+.resultbox .redes button {
+  color: var(--pink) !important;
   transition: all ease 0.2s;
 }
-.resultbox .redes a:hover {
-  color: var(--blue);
+.resultbox .redes a:hover,
+.resultbox .redes button:hover {
+  color: var(--blue) !important;
 }
-.resultbox .redes a:hover svg {
+.resultbox .redes a:hover svg,
+.resultbox .redes button:hover svg {
   border-color: var(--blue);
 }
 .resultbox .redes svg {
@@ -280,7 +284,7 @@
   color: #fff;
   border: none;
   font-size: 16px;
-  text-transform: uppercase;
+  text-transform: initial;
   font-weight: normal;
   letter-spacing: 2px;
 }
@@ -296,6 +300,11 @@
 }
 .react-quiz-container .questionWrapper .answerBtn.correct {
   background: none;
+  color: lawngreen;
+}
+.react-quiz-container .questionWrapper .answerBtn.incorrect,
+.react-quiz-container .questionWrapper .answerBtn.undefined {
+  color: red;
 }
 .react-quiz-container .questionWrapper .answerBtn.incorrect:before,
 .react-quiz-container .questionWrapper .answerBtn.correct:before {
@@ -312,7 +321,7 @@
 }
 .react-quiz-container .questionWrapper .nextQuestionBtn:hover {
   background: #fff;
-  color: var(--purple);
+  color: var(--blue);
 }
 .react-quiz-container .card-body .quiz-result-filter,
 .react-quiz-container .card-body .result-answer-wrapper {

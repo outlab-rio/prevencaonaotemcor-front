@@ -8,7 +8,14 @@ import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
-import doctor from '../../assets/images/doctor.jpg'
+import doctor from '../../assets/images/doctor-1.png'
+import doctor2 from '../../assets/images/doctor-2.png'
+import doctor3 from '../../assets/images/doctor-3.png'
+import doctor4 from '../../assets/images/doctor-4.png'
+import doctor5 from '../../assets/images/doctor-5.png'
+import doctor6 from '../../assets/images/doctor-6.png'
+import doctor7 from '../../assets/images/doctor-7.png'
+import doctor8 from '../../assets/images/doctor-8.png'
 
 import videodiagnosticoprostata from '../../assets/videos/video-diagnostico-prostata.mp4'
 import videodiagnosticoprostatatwo from '../../assets/videos/video-diagnostico-prostata-2.mp4'
@@ -119,37 +126,45 @@ function PreventionSection(){
         <Slider {...centerSlide}>
           <div>
             <img src={doctor} alt="doctor click" onClick={e => setshowModal(true)} />
+            <p>Diagnóstico - Câncer de Próstata</p>
           </div>
           <div>
-            <img src={doctor} alt="doctor" onClick={e => setshowModal2(true)} />
+            <img src={doctor2} alt="doctor" onClick={e => setshowModal2(true)} />
+            <p>Diagnóstico - Câncer de Próstata</p>
           </div>
           <div>
-            <img src={doctor} alt="doctor" onClick={e => setshowModal3(true)} />
+            <img src={doctor3} alt="doctor" onClick={e => setshowModal3(true)} />
+            <p>Estatísticas - Câncer de Próstata</p>
           </div>
           <div>
-            <img src={doctor} alt="doctor" onClick={e => setshowModal4(true)} />
+            <img src={doctor4} alt="doctor" onClick={e => setshowModal4(true)} />
+            <p>Fatores de Risco - Câncer de Próstata</p>
           </div>
           <div>
-            <img src={doctor} alt="doctor" onClick={e => setshowModal5(true)} />
+            <img src={doctor5} alt="doctor" onClick={e => setshowModal5(true)} />
+            <p>Prevenção - Câncer de Próstata</p>
           </div>
           <div>
-            <img src={doctor} alt="doctor" onClick={e => setshowModal6(true)} />
+            <img src={doctor6} alt="doctor" onClick={e => setshowModal6(true)} />
+            <p>Estatísticas - Câncer de Mama</p>
           </div>
           <div>
-            <img src={doctor} alt="doctor" onClick={e => setshowModal7(true)} />
+            <img src={doctor7} alt="doctor" onClick={e => setshowModal7(true)} />
+            <p>Fatores de Risco - Câncer de Mama</p>
           </div>
           <div>
-            <img src={doctor} alt="doctor" onClick={e => setshowModal8(true)} />
+            <img src={doctor8} alt="doctor" onClick={e => setshowModal8(true)} />
+            <p>Sinais e Sintomas - Câncer de Mama</p>
           </div>
         </Slider>
 
-        <p>SOMOS HOMENS CONSCIENTES. SOMOS MULHERES PREVENIDAS.</p>
+        <p>Somos homens conscientes. Somos mulheres prevenidas.</p>
         
-        <p>SOMOS FAMÍLIA. SOMOS SÃO CARLOS.</p>
+        <p>Somos família. Somos São Carlos.</p>
         
-        <p>GRAVE UM DEPOIMENTOSOBRE A IMPORTÂNCIA DA CONSCIENTIZAÇÃO, PREVENÇÃO E COMBATE AO CÂNCER. EXPLIQUE PARA A GENTE QUAL É O SIGNIFICADO DO CÂNCER PARA VOCÊ.</p>
+        <p>Grave um depoimento sobre a importância da conscientização, prevenção e combate ao câncer. Explique para a gente qual é o significado do câncer para você.</p>
         
-        <p>COMPARTILHE NAS SUAS REDES SOCIAIS E FAÇA PARTE DESSE VÍDEO COLABORATIVO!</p>
+        <p>Compartilhe nas suas redes sociais e faça parte desse vídeo colaborativo!</p>
 
       </div>
 

@@ -75,3 +75,56 @@
 .sendword form button:hover {
   background: var(--blue);
 }
+.ModalShare {
+  background: #fff;
+  padding: 50px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 60%;
+  display: block;
+  opacity: 1;
+}
+.ModalShare svg {
+  cursor: pointer;
+  margin: -40px 0px 5px 0px;
+  float: right;
+  font-size: 32px;
+  transition: all ease 0.2s;
+}
+.ModalShare svg:hover {
+  color: var(--pink);
+}
+.ModalShare p {
+  width: 50%;
+  margin: 0px auto 80px auto;
+  font-size: 20px;
+  line-height: 35px;
+}
+.ModalShare a,
+.ModalShare button {
+  color: var(--pink) !important;
+  transition: all ease 0.2s;
+}
+.ModalShare a:hover,
+.ModalShare button:hover {
+  color: var(--blue) !important;
+}
+.ModalShare a:hover svg,
+.ModalShare button:hover svg {
+  border-color: var(--blue);
+}
+.ModalShare a:hover svg path,
+.ModalShare button:hover svg path {
+  fill: var(--blue);
+}
+.ModalShare a svg,
+.ModalShare button svg {
+  font-size: 24px;
+  border-radius: 100px;
+  padding: 10px;
+  border: 1px solid var(--pink);
+  margin: 0px 10px;
+}

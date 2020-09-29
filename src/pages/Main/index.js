@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import ReactModal from 'react-modal';
@@ -33,6 +33,20 @@ import doublecirclephotoone from '../../assets/images/double-circle-photo-1.png'
 function App() {
 
   const [showModal, setshowModal] = useState(false);
+  const [wordslide, setwordSlide] = useState(['coragem', 'força', 'superação', 'amor']);
+
+  function changeWord() {
+    setInterval(function() {
+      var rand = Math.floor(Math.random() * 4);
+      document.getElementById("wordone").innerHTML = wordslide[rand];
+      document.getElementById("wordtwo").innerHTML = wordslide[rand];
+      document.getElementById("wordthree").innerHTML = wordslide[rand];
+    }, 2000);
+  }
+
+  useEffect(() => {
+    changeWord();
+  }, [])
 
   return (
     <div className="App">
@@ -48,13 +62,13 @@ function App() {
           <img src={halfzigblue} alt="" className="halfzigblue" />
           <img src={doublecirclephotoone} alt="" className="doublecirclephotoone" />
 
-          <p className="left">Você precisa se<br/>cuidar com coragem.</p>
+          <p className="left">Você precisa ser <span id="wordone">amor</span>.</p>
 
           <div className="clear"></div>
 
-          <h3>SUPERAÇÃO</h3>
+          <h3><span id="wordtwo">Amor</span></h3>
 
-          <p className="right">Coragem para cuidar<br/>de quem você ama.</p>
+          <p className="right"><span id="wordthree">Amor</span> para cuidar<br/>de você e de quem você ama.</p>
 
           <div className="clear"></div>
 
@@ -70,7 +84,7 @@ function App() {
 
           <img src={doubleblue} alt="" className="doubleblue" />
 
-          <p>A São Carlos criou a campanha prevenção não tem cor para mostrar a importância do cuidado com você e com quem você ama. Misturamos rosa com azul para conscientizar que outubro rosa e novembro azul não é apenas sobre o câncer de mama e o de próstata. É sobre um se importar com o outro. Homens e mulheres valorizando, acima de tudo, a vida. <strong>Participe da nossa campanha!</strong></p>
+          <p>A São Carlos criou a campanha Prevenção Não Tem Cor para mostrar a importância do cuidado com você e com quem você ama. Misturamos rosa com azul para conscientizar que outubro rosa e novembro azul não é apenas sobre o câncer de mama e o de próstata. É sobre um se importar com o outro. Homens e mulheres valorizando, acima de tudo, a vida. <strong>Participe da nossa campanha!</strong></p>
           
         </div>
 
@@ -112,7 +126,7 @@ function App() {
 
           <div className="clear"></div>
           
-          <Link to="/depoimentos" className="blue"><FontAwesomeIcon icon={faFolder} /> Procurar</Link>
+          <Link to="/depoimentos?word=" className="blue"><FontAwesomeIcon icon={faFolder} /> Procurar</Link>
 
           <Link to="/enviar-depoimento" className="pink"><FontAwesomeIcon icon={faCamera} /> Gravar</Link>
 

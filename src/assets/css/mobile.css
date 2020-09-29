@@ -11,6 +11,10 @@
   .button {
     padding: 10px 20px;
   }
+  .header,
+  .headerinner {
+    position: relative;
+  }
   .header nav,
   .headerinner nav {
     display: none;
