@@ -46,7 +46,7 @@ function App() {
       }, 2000);
     }
 
-    //changeWord();
+    changeWord();
   
   }, [])
 
