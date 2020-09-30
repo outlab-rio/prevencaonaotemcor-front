@@ -208,6 +208,24 @@
   .react-quiz-container .questionWrapper .questionWrapperBody {
     width: 100%;
   }
+  .react-quiz-container .questionWrapper .questionWrapperBody .questionModal {
+    width: 100%;
+  }
+  .react-quiz-container .questionWrapper .questionWrapperBody .questionModal div {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .Modal.sendemail {
+    width: 100%;
+  }
+  .Modal.sendemail h3 {
+    width: 80%;
+    font-size: 5vw;
+  }
+  .Modal.sendemail form input,
+  .Modal.sendemail form button {
+    width: 70%;
+  }
   .resultbox {
     padding: 0px 0px;
   }
@@ -236,6 +254,9 @@
   .resultbox p.videos strong {
     font-size: 5vw;
     line-height: 10vw;
+  }
+  .resultbox .videos.btn {
+    max-width: 100%;
   }
   .resultbox:before,
   .resultbox:after {

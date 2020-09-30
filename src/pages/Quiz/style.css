@@ -165,14 +165,29 @@
   border-radius: 20px;
   border: 1px solid var(--black);
 }
-.resultbox p.videos {
+.resultbox .videos {
   max-width: 40%;
   margin: 0px auto 20px auto;
   padding: 0px;
 }
-.resultbox p.videos strong {
+.resultbox .videos strong {
   font-size: 32px;
   line-height: 42px;
+}
+.resultbox .videos.btn {
+  text-decoration: none;
+  color: var(--white);
+  background: var(--blue);
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  transition: all ease 0.2s;
+}
+.resultbox .videos.btn:hover {
+  background: var(--pink);
 }
 .resultbox .button {
   position: relative;
@@ -253,6 +268,47 @@
   padding: 10px;
   border: 1px solid var(--pink);
   margin: 0px 10px;
+}
+.Modal.sendemail {
+  background: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+.Modal.sendemail h3 {
+  text-shadow: none;
+  font-weight: bold;
+  color: var(--black);
+  font-size: 28px;
+  width: 50%;
+  margin: 0px auto;
+  font-weight: normal;
+}
+.Modal.sendemail form input,
+.Modal.sendemail form button {
+  width: 30%;
+  margin: 20px auto;
+  display: block;
+  border: 3px solid var(--black);
+  padding: 20px 0px;
+  border-radius: 20px;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.Modal.sendemail form button {
+  background: var(--pink);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+.Modal.sendemail form button:hover {
+  background: var(--blue);
 }
 @media only screen and (min-width: 1030px) and (max-width: 1366px) {
   .quiz:after {

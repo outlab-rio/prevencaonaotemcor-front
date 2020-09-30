@@ -172,13 +172,28 @@
       border: 1px solid var(--black);
     }
   }
-  p.videos{
+  .videos{
     max-width: 40%;
     margin: 0px auto 20px auto;
     padding: 0px;
     strong{
       font-size: 32px;
       line-height: 42px;
+    }
+  }
+  .videos.btn{
+    text-decoration: none;
+    color: var(--white);
+    background: var(--blue);
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: all ease 0.2s;
+    &:hover{
+      background: var(--pink);
     }
   }
   .button{
@@ -255,6 +270,49 @@
       padding: 10px;
       border: 1px solid var(--pink);
       margin: 0px 10px;
+    }
+  }
+}
+
+.Modal.sendemail{
+  background: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  h3{
+    text-shadow: none;
+    font-weight: bold;
+    color: var(--black);
+    font-size: 28px;
+    width: 50%;
+    margin: 0px auto;
+    font-weight: normal;
+  }
+  form{
+    input,button{
+      width: 30%;
+      margin: 20px auto;
+      display: block;
+      border: 3px solid var(--black);
+      padding: 20px 0px;
+      border-radius: 20px;
+      text-align: center;
+      letter-spacing: 4px;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    button{
+      background: var(--pink);
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      transition: all ease 0.2s;
+      cursor: pointer;
+      &:hover{
+        background: var(--blue);
+      }
     }
   }
 }

@@ -1,11 +1,18 @@
 import React, {useState, useEffect} from 'react';
 import Quiz from 'react-quiz-component';
 
+import ReactModal from 'react-modal';
+
+import Axios from "axios";
+
+import { useForm } from "react-hook-form";
+
 import './style.css';
 import HeaderInner from '../../components/HeaderInner'
 import Footer from '../../components/Footer';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faTwitter, faWhatsapp  } from '@fortawesome/free-brands-svg-icons';
 
 import {
@@ -19,8 +26,27 @@ import {
 function QuizPage() {
 
   const [result, setResult] = useState();
+  const [email, setEmail] = useState([]);
+  const [showModal, setshowModal] = useState(false);
 
   const shareText = "Acabei de fazer o Quiz Prevenção Não Tem Cor, e tirei " + result + ". Faça você também!";
+
+  const { handleSubmit } = useForm();
+
+  function newUser() {
+      
+    Axios.post( process.env.REACT_APP_API_BASE_URL + "/users", {
+      email
+    })
+    .then((res) => {
+      setshowModal(false);
+      window.open(`https://firebasestorage.googleapis.com/v0/b/prevencao-nao-tem-cor.appspot.com/o/ebookprevencao.pdf?alt=media&token=ba04c795-6179-4adc-bf2d-2b8ca02a9c9f`, '_blank')
+    })
+    .catch((error) => {
+        console.log(error.response.data.error);
+    });
+
+  };
 
   const questionsBank = {
     "appLocale": {
@@ -204,35 +230,46 @@ function QuizPage() {
 
         <div className="content">
 
+          <ReactModal 
+            isOpen={showModal}
+            contentLabel="Minimal Modal Example"
+            className="Modal sendemail"
+          >
+
+            <FontAwesomeIcon icon={faTimes} onClick={e => setshowModal(false)} />
+
+            <h3><strong>Quer saber mais sobre o câncer de mama e prostata?</strong><br/>Baixe nosso e-book</h3>
+
+            <form onSubmit={handleSubmit(newUser)} id="newemail">
+              <input type="email" name="email" id="email" placeholder="DIGITE SEU E-MAIL" onChange={e => setEmail(e.target.value)} />
+              <button>BAIXAR</button>
+            </form>
+          
+          </ReactModal>
+
           <h2>Você acertou<br/><strong>{result}%</strong></h2>
 
           <p className="sharetitle"><span>Compartilhe nas suas redes sociais</span> e ajude quem você ama a se manter previnido.</p>
 
           <div className="redes">
 
-          <FacebookShareButton className="facebook" url='https://prevencao-nao-tem-cor.web.app/' hashtag="prevencaonaotemcor" quote={shareText}>
-              <FontAwesomeIcon icon={faFacebook} />
-          </FacebookShareButton>
-          <TwitterShareButton url='https://prevencao-nao-tem-cor.web.app/' hashtag="prevencaonaotemcor" title={shareText}>
-              <FontAwesomeIcon icon={faTwitter} />
-          </TwitterShareButton>
-          <WhatsappShareButton url='https://prevencao-nao-tem-cor.web.app/' title={shareText}>
-              <FontAwesomeIcon icon={faWhatsapp} />
-          </WhatsappShareButton>
-
-            {/* <a href="https://www.facebook.com/SaoCarlosSaudeOncologica/" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
-
-            <a href="https://www.linkedin.com/company/saocarlos-saudeoncologica/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
-
-            <a href="https://www.instagram.com/saocarlos_saudeoncologica/" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a> */}
+            <FacebookShareButton className="facebook" url='https://prevencao-nao-tem-cor.web.app/' hashtag="prevencaonaotemcor" quote={shareText}>
+                <FontAwesomeIcon icon={faFacebook} />
+            </FacebookShareButton>
+            <TwitterShareButton url='https://prevencao-nao-tem-cor.web.app/' hashtag="prevencaonaotemcor" title={shareText}>
+                <FontAwesomeIcon icon={faTwitter} />
+            </TwitterShareButton>
+            <WhatsappShareButton url='https://prevencao-nao-tem-cor.web.app/' title={shareText}>
+                <FontAwesomeIcon icon={faWhatsapp} />
+            </WhatsappShareButton>
 
           </div>
 
-          <a href="https://firebasestorage.googleapis.com/v0/b/prevencao-nao-tem-cor.appspot.com/o/ebookprevencao.pdf?alt=media&token=ba04c795-6179-4adc-bf2d-2b8ca02a9c9f" target="_blank" className="button"><span>baixe aqui nosso e-book e saiba mais</span></a>
+          <a href="#" onClick={e => setshowModal(true)} className="button"><span>baixe aqui nosso e-book e saiba mais</span></a>
 
           <p className="videos"><strong>Quer saber tudo sobre prevenção?</strong></p>
 
-          <p className="videos">Assista aos conteúdos dos nossos médicos.</p>
+          <a href="/#tips" className="videos btn">Assista aos conteúdos dos nossos médicos</a>
 
         </div>
 
