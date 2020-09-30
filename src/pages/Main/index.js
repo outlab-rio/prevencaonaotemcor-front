@@ -94,8 +94,6 @@ function App() {
 
       <WordCloud />
 
-      <SendWord />
-
       <PreventionSection />  
 
       <section className="video">
@@ -147,7 +145,7 @@ function App() {
           <img src={doublecirclephototwo} alt="" className="doublecirclephototwo" />
           <span className="bluecircle"></span>
 
-          <h2>Quizz</h2>
+          <h2>Quiz</h2>
 
           <p>Quanto mais informação você tem,<br/><strong>maior é a chance de cuidar de você<br/>e de quem você ama.</strong></p>
 

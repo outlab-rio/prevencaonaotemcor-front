@@ -25,6 +25,8 @@ import videoprevencaoprostata from '../../assets/videos/video-prevencao-prostata
 import videoestatisticamama from '../../assets/videos/video-estatisticas-mama.mp4'
 import videoriscomama from '../../assets/videos/video-fator-risco-mama.mp4'
 import videosinaismama from '../../assets/videos/video-sinais-sintomas-mama.mp4'
+import videodiagnosticomama from '../../assets/videos/video-diagnostico-mama.mp4'
+import videoprevencaomama from '../../assets/videos/video-prevencao-mama.mp4'
 
 function PreventionSection(){
 
@@ -36,6 +38,8 @@ function PreventionSection(){
   const [showModal6, setshowModal6] = useState(false);
   const [showModal7, setshowModal7] = useState(false);
   const [showModal8, setshowModal8] = useState(false);
+  const [showModal9, setshowModal9] = useState(false);
+  const [showModal10, setshowModal10] = useState(false);
 
   const centerSlide = {
     className: "center",
@@ -117,6 +121,16 @@ function PreventionSection(){
         <video controls controlsList="nodownload"><source src={videosinaismama} type="video/mp4" /></video>
       </ReactModal>
 
+      <ReactModal isOpen={showModal9} className="Modal" >
+        <FontAwesomeIcon icon={faTimes} onClick={e => setshowModal8(false)} />
+        <video controls controlsList="nodownload"><source src={videodiagnosticomama} type="video/mp4" /></video>
+      </ReactModal>
+
+      <ReactModal isOpen={showModal10} className="Modal" >
+        <FontAwesomeIcon icon={faTimes} onClick={e => setshowModal8(false)} />
+        <video controls controlsList="nodownload"><source src={videoprevencaomama} type="video/mp4" /></video>
+      </ReactModal>
+
       <section className="dicas" id="tips">
 
       <div className="content">
@@ -124,10 +138,10 @@ function PreventionSection(){
         <h3>SAIBA MAIS SOBRE O<br/>CANCÊR DE MAMA E PRÓSTATA</h3>
 
         <Slider {...centerSlide}>
-          <div>
+          {/* <div>
             <img src={doctor} alt="doctor click" onClick={e => setshowModal(true)} />
             <p>Diagnóstico - Câncer de Próstata</p>
-          </div>
+          </div> */}
           <div>
             <img src={doctor2} alt="doctor" onClick={e => setshowModal2(true)} />
             <p>Diagnóstico - Câncer de Próstata</p>
@@ -155,6 +169,14 @@ function PreventionSection(){
           <div>
             <img src={doctor8} alt="doctor" onClick={e => setshowModal8(true)} />
             <p>Sinais e Sintomas - Câncer de Mama</p>
+          </div>
+          <div>
+            <img src={doctor2} alt="doctor" onClick={e => setshowModal9(true)} />
+            <p>Diagnóstico - Câncer de Mama</p>
+          </div>
+          <div>
+            <img src={doctor4} alt="doctor" onClick={e => setshowModal10(true)} />
+            <p>Prevenção - Câncer de Mama</p>
           </div>
         </Slider>
 

@@ -40,7 +40,7 @@ function QuizPage() {
     })
     .then((res) => {
       setshowModal(false);
-      window.open(`https://firebasestorage.googleapis.com/v0/b/prevencao-nao-tem-cor.appspot.com/o/ebookprevencao.pdf?alt=media&token=ba04c795-6179-4adc-bf2d-2b8ca02a9c9f`, '_blank')
+      window.open(`https://firebasestorage.googleapis.com/v0/b/prevencao-nao-tem-cor.appspot.com/o/ebook-prevencao.pdf?alt=media&token=bf4265d3-bbf2-461b-8f25-02412f6ce842`, '_blank')
     })
     .catch((error) => {
         console.log(error.response.data.error);
@@ -133,9 +133,9 @@ function QuizPage() {
           "A partir dos 60 anos"
         ],
         "questionType": "text",
-        "correctAnswer": "3",
+        "correctAnswer": "1",
         "messageForCorrectAnswer": "Muito Bem!",
-        "messageForIncorrectAnswer": "Resposta: A partir dos 50 anos",
+        "messageForIncorrectAnswer": "Resposta: A partir dos 40 anos",
         "point": "11,1"
       },
       {
@@ -160,7 +160,7 @@ function QuizPage() {
           "Não"
         ],
         "correctAnswer": "1",
-        "messageForCorrectAnswer": "Muito Bem! Todas as mulheres a partir dos 45 anos devem realizar a mamografia anualmente. A mamografia é fundamental para o diagnóstico precoce do câncer de mama, pois identifica a existência de nódulos menores e outras irregularidades.Para as mulheres de idade até 45 anos, é recomendada a ida regular ao ginecologista e acompanhamento anual por meio de ultrassonografias das mamas, quando necessário.",
+        "messageForCorrectAnswer": "Muito Bem! Todas as mulheres a partir dos 40 anos devem realizar a mamografia anualmente. A mamografia é fundamental para o diagnóstico precoce do câncer de mama, pois identifica a existência de nódulos menores e outras irregularidades. Para as mulheres de idade até 45 anos, é recomendada a ida regular ao ginecologista e acompanhamento anual por meio de ultrassonografias das mamas, quando necessário.",
         "messageForIncorrectAnswer": "Resposta: Sim. Todas as mulheres a partir dos 45 anos devem realizar a mamografia anualmente. A mamografia é fundamental para o diagnóstico precoce do câncer de mama, pois identifica a existência de nódulos menores e outras irregularidades.Para as mulheres de idade até 45 anos, é recomendada a ida regular ao ginecologista e acompanhamento anual por meio de ultrassonografias das mamas, quando necessário.",
         "point": "11,1"
       },
@@ -249,7 +249,7 @@ function QuizPage() {
 
           <h2>Você acertou<br/><strong>{result}%</strong></h2>
 
-          <p className="sharetitle"><span>Compartilhe nas suas redes sociais</span> e ajude quem você ama a se manter previnido.</p>
+          <p className="sharetitle"><span>Compartilhe nas suas redes sociais</span> e ajude quem você ama a se manter prevenido.</p>
 
           <div className="redes">
 
@@ -269,7 +269,7 @@ function QuizPage() {
 
           <p className="videos"><strong>Quer saber tudo sobre prevenção?</strong></p>
 
-          <a href="/#tips" className="videos btn">Assista aos conteúdos dos nossos médicos</a>
+          <a href="/#tips" className="videos btn">Assista aos conteúdos dos nossos especialistas</a>
 
         </div>
 

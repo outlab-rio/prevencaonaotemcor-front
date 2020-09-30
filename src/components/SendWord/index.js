@@ -36,7 +36,7 @@ const SendWord = () => {
     })
     .then((res) => {
       //window.location.reload();
-      setshowModal(true)
+      setshowModal(true);
     })
     .catch((error) => {
         console.log(error.response.data.error);
