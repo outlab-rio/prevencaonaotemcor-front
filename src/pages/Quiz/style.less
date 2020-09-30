@@ -1,9 +1,9 @@
 .react-quiz-container:after{
   position: absolute;
-  right: -25vw;
+  right: -35vw;
   top: 0px;
-  width: 100vh;
-  height: 100vh;
+  width: 900px;
+  height: 900px;
   background-color: var(--pink);
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
@@ -18,8 +18,8 @@
   position: absolute;
   right: 10vw;
   top: 0px;
-  width: 100vh;
-  height: 100vh;
+  width: 900px;
+  height: 900px;
   background-color: var(--blue);
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
@@ -50,6 +50,18 @@
     min-height: 700px;
     .questionWrapperBody{
       width: 70%;
+      padding-top: 50px;
+      .questionModal{
+        position: absolute;
+        width: 70%;
+        top: 17vh;
+        div{
+          background: var(--pink) !important;
+          font-size: 18px;
+          line-height: 30px;
+          font-weight: normal;
+        }
+      }
     }
   }
   h2{
@@ -251,19 +263,19 @@
 and (min-width: 1030px)   
 and (max-width: 1366px){
   .quiz:after{
-    width: 150vh;
-    height: 150vh;
+    width: 900px;
+    height: 900px;
     right: -45vw;
 
   }
   .quiz:before{
-    width: 150vh;
-    height: 150vh;
+    width: 900px;
+    height: 900px;
   }
 }
 
 .react-quiz-container{
-  height: 665px;
+  height: 900px;
   margin-bottom: 50px;
   overflow: hidden;
   .tag-container{
@@ -288,6 +300,11 @@ and (max-width: 1366px){
   }
   .questionWrapper{
     padding: 0px;
+    .questionWrapperBody{
+      .questionModal{
+        top: 155px !important;
+      }
+    }
     .answerBtn{
       background: none;
       color: #fff;
@@ -311,9 +328,11 @@ and (max-width: 1366px){
       background: none;
       color: lawngreen;
     }
-    .answerBtn.incorrect,
-    .answerBtn.undefined{
+    .answerBtn.incorrect{
       color: red;
+    }
+    .answerBtn.undefined{
+      color: #fff;
     }
     .answerBtn.incorrect:before,
     .answerBtn.correct:before{

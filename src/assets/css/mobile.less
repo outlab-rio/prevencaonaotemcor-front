@@ -14,17 +14,24 @@
 
 .header,
 .headerinner{
-  position: relative;
+  //position: relative;
   nav{
     display: none;
   }
 }
 
 .simplewords{
-  padding: 50px 0px 50px 0px;
+  padding: 150px 0px 50px 0px;
   p{
     font-size: 5vw;
     line-height: 8vw;
+    text-align: center;
+  }
+  p.left,
+  p.right{
+    float: none;
+    width: 100%;
+    text-align: center;
   }
   h3{
     font-size: 15vw;
@@ -64,8 +71,10 @@
     text-align: center;
     margin: 0px auto;
     a{
-      display: inline-block;
+      display: inline-block !important;
       margin: 5px !important;
+      color: var(--pink);
+      font-size: 26px;
     }
   }
 }
@@ -162,11 +171,22 @@ footer{
 }
 
 .dicas .slick-slider .slick-list{
-  height: 200px;
+  height: 280px;
 }
 
 .slick-prev, .slick-next{
   display: none !important;
+}
+
+.ModalShare{
+  width: 80%;
+  padding: 20px;
+  p{
+    width: 100%;
+    margin: 30px auto 80px auto;
+    font-size: 4.5vw;
+    line-height: 7vw;
+  }
 }
 
 //

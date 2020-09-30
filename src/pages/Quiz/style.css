@@ -1,9 +1,9 @@
 .react-quiz-container:after {
   position: absolute;
-  right: -25vw;
+  right: -35vw;
   top: 0px;
-  width: 100vh;
-  height: 100vh;
+  width: 900px;
+  height: 900px;
   background-color: var(--pink);
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
@@ -18,8 +18,8 @@
   position: absolute;
   right: 10vw;
   top: 0px;
-  width: 100vh;
-  height: 100vh;
+  width: 900px;
+  height: 900px;
   background-color: var(--blue);
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
@@ -52,6 +52,18 @@
 }
 .react-quiz-container .questionWrapper .questionWrapperBody {
   width: 70%;
+  padding-top: 50px;
+}
+.react-quiz-container .questionWrapper .questionWrapperBody .questionModal {
+  position: absolute;
+  width: 70%;
+  top: 17vh;
+}
+.react-quiz-container .questionWrapper .questionWrapperBody .questionModal div {
+  background: var(--pink) !important;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
 }
 .react-quiz-container h2 {
   font-size: 42px;
@@ -244,17 +256,17 @@
 }
 @media only screen and (min-width: 1030px) and (max-width: 1366px) {
   .quiz:after {
-    width: 150vh;
-    height: 150vh;
+    width: 900px;
+    height: 900px;
     right: -45vw;
   }
   .quiz:before {
-    width: 150vh;
-    height: 150vh;
+    width: 900px;
+    height: 900px;
   }
 }
 .react-quiz-container {
-  height: 665px;
+  height: 900px;
   margin-bottom: 50px;
   overflow: hidden;
 }
@@ -279,6 +291,9 @@
 .react-quiz-container .questionWrapper {
   padding: 0px;
 }
+.react-quiz-container .questionWrapper .questionWrapperBody .questionModal {
+  top: 155px !important;
+}
 .react-quiz-container .questionWrapper .answerBtn {
   background: none;
   color: #fff;
@@ -302,9 +317,11 @@
   background: none;
   color: lawngreen;
 }
-.react-quiz-container .questionWrapper .answerBtn.incorrect,
-.react-quiz-container .questionWrapper .answerBtn.undefined {
+.react-quiz-container .questionWrapper .answerBtn.incorrect {
   color: red;
+}
+.react-quiz-container .questionWrapper .answerBtn.undefined {
+  color: #fff;
 }
 .react-quiz-container .questionWrapper .answerBtn.incorrect:before,
 .react-quiz-container .questionWrapper .answerBtn.correct:before {

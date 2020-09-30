@@ -45,7 +45,7 @@ function App() {
   }
 
   useEffect(() => {
-    changeWord();
+    //changeWord();
   }, [])
 
   return (

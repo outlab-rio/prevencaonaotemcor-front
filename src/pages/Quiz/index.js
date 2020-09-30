@@ -14,6 +14,8 @@ import {
   WhatsappShareButton,
  } from "react-share";
 
+ import ebook from '../../assets/images/ebookprevencao.pdf';
+
 function QuizPage() {
 
   const [result, setResult] = useState();
@@ -28,7 +30,7 @@ function QuizPage() {
       "resultFilterAll": "Todos",
       "resultFilterCorrect": "Correct",
       "resultFilterIncorrect": "Incorrect",
-      "nextQuestionBtn": "ENVIAR RESPOSTA",
+      "nextQuestionBtn": "PRÓXIMA PERGUNTA",
       "resultPageHeaderText": "",
     },
     "questions": [
@@ -41,6 +43,8 @@ function QuizPage() {
           "Falso"
         ],
         "correctAnswer": "2",
+        "messageForCorrectAnswer": "Muito Bem! O autoexame das mamas acaba não identificando o tumor em sua fase inicial. Quando já é possível tocá-lo, pode significar que ele se encontra em um estágio mais avançado.",
+        "messageForIncorrectAnswer": "Resposta: Falso. O autoexame das mamas acaba não identificando o tumor em sua fase inicial. Quando já é possível tocá-lo, pode significar que ele se encontra em um estágio mais avançado.",
         "explanation": "O autoexame das mamas acaba não identificando o tumor em sua fase inicial.",
         "point": "11,1"
       },
@@ -52,6 +56,8 @@ function QuizPage() {
           "Falso"
         ],
         "correctAnswer": "2",
+        "messageForCorrectAnswer": "Muito Bem! Apesar de não ser comum, o câncer de mama também pode aparecer nos homens -  apenas 1% dos casos de câncer de mama são diagnosticados em homens.",
+        "messageForIncorrectAnswer": "Resposta: Falso. Apesar de não ser comum, o câncer de mama também pode aparecer nos homens -  apenas 1% dos casos de câncer de mama são diagnosticados em homens.",
         "point": "11,1"
       },
       {
@@ -63,6 +69,8 @@ function QuizPage() {
           "Diminuição da vontade de urinar; Presença de sangue na urina e sêmen; Dor no órgão genital masculino."
         ],
         "correctAnswer": "1",
+        "messageForCorrectAnswer": "Muito Bem!",
+        "messageForIncorrectAnswer": "Resposta: Vontade de urinar com frequência; Dor nos ossos; Dor ao urinar; Presença de sangue na urina ou sêmen",
         "point": "11,1"
       },
       {
@@ -74,6 +82,8 @@ function QuizPage() {
           "Saída de líquido dos mamilos; pele da mama amarelada; nódulo na região da mama "
         ],
         "correctAnswer": "1",
+        "messageForCorrectAnswer": "Muito Bem!",
+        "messageForIncorrectAnswer": "Resposta: Nódulo na mama ou axila; Pele da mama avermelhada ou retraída; Alterações no bico do peito; Saída espontânea de líquido dos mamilos.",
         "point": "11,1"
       },
       {
@@ -84,6 +94,8 @@ function QuizPage() {
           "Falso"
         ],
         "correctAnswer": "2",
+        "messageForCorrectAnswer": "Muito Bem! A ereção do homem depende de fatores como secreção da testosterona, aporte sanguíneo satisfatório e condução adequada dos impulsos nervosos. Não existe relação direta com a próstata.",
+        "messageForIncorrectAnswer": "Resposta: Falso. A ereção do homem depende de fatores como secreção da testosterona, aporte sanguíneo satisfatório e condução adequada dos impulsos nervosos. Não existe relação direta com a próstata.",
         "point": "11,1"
       },
       {
@@ -96,6 +108,8 @@ function QuizPage() {
         ],
         "questionType": "text",
         "correctAnswer": "3",
+        "messageForCorrectAnswer": "Muito Bem!",
+        "messageForIncorrectAnswer": "Resposta: A partir dos 50 anos",
         "point": "11,1"
       },
       {
@@ -108,6 +122,8 @@ function QuizPage() {
           "A partir dos 65 anos"
         ],
         "correctAnswer": "4",
+        "messageForCorrectAnswer": "Muito Bem!",
+        "messageForIncorrectAnswer": "Resposta: A partir dos 65 anos",
         "point": "11,1"
       },
       {
@@ -118,6 +134,8 @@ function QuizPage() {
           "Não"
         ],
         "correctAnswer": "1",
+        "messageForCorrectAnswer": "Muito Bem! Todas as mulheres a partir dos 45 anos devem realizar a mamografia anualmente. A mamografia é fundamental para o diagnóstico precoce do câncer de mama, pois identifica a existência de nódulos menores e outras irregularidades.Para as mulheres de idade até 45 anos, é recomendada a ida regular ao ginecologista e acompanhamento anual por meio de ultrassonografias das mamas, quando necessário.",
+        "messageForIncorrectAnswer": "Resposta: Sim. Todas as mulheres a partir dos 45 anos devem realizar a mamografia anualmente. A mamografia é fundamental para o diagnóstico precoce do câncer de mama, pois identifica a existência de nódulos menores e outras irregularidades.Para as mulheres de idade até 45 anos, é recomendada a ida regular ao ginecologista e acompanhamento anual por meio de ultrassonografias das mamas, quando necessário.",
         "point": "11,1"
       },
       {
@@ -128,6 +146,8 @@ function QuizPage() {
         ],
         "questionType": "text",
         "correctAnswer": "1",
+        "messageForCorrectAnswer": "Muito Bem! Tudo o que é saudável agride menos o organismo, logo, faz muito bem à saúde. Por isso, uma alimentação balanceada, rica em frutas, legumes, verduras, leguminosas, cereais integrais e oleaginosas e a prática de pelo menos 30 minutos de qualquer tipo de atividade física por dia (caminhada, corrida, dança, subir escadas,academia, andar de bicicleta), são boas opções para a prevenção do câncer.",
+        "messageForIncorrectAnswer": "Resposta: Verdadeiro. Tudo o que é saudável agride menos o organismo, logo, faz muito bem à saúde. Por isso, uma alimentação balanceada, rica em frutas, legumes, verduras, leguminosas, cereais integrais e oleaginosas e a prática de pelo menos 30 minutos de qualquer tipo de atividade física por dia (caminhada, corrida, dança, subir escadas,academia, andar de bicicleta), são boas opções para a prevenção do câncer.",
         "point": "11,1"
       }
     ]
@@ -176,7 +196,7 @@ function QuizPage() {
 
       <section className="quiz">
 
-        <Quiz quiz={questionsBank} showInstantFeedback={false} onComplete={onCompleteAction} showDefaultResult={false} />
+        <Quiz quiz={questionsBank} showInstantFeedback={true} onComplete={onCompleteAction} showDefaultResult={false} />
 
       </section>
       
@@ -208,7 +228,7 @@ function QuizPage() {
 
           </div>
 
-          <a href="#" className="button"><span>baixe aqui nosso e-book e saiba mais</span></a>
+          <a href="https://firebasestorage.googleapis.com/v0/b/prevencao-nao-tem-cor.appspot.com/o/ebookprevencao.pdf?alt=media&token=ba04c795-6179-4adc-bf2d-2b8ca02a9c9f" target="_blank" className="button"><span>baixe aqui nosso e-book e saiba mais</span></a>
 
           <p className="videos"><strong>Quer saber tudo sobre prevenção?</strong></p>
 
