@@ -74,7 +74,7 @@ function SendVideo() {
           <h1><strong>Descreva em uma palavra</strong><br/> o que significa o Câncer para você.</h1>
 
           <form encType="multipart/form-data" onSubmit={handleSubmit(onFileUpload)} id="newvideo">
-            <input type="text" name="text" id="text" placeholder="DIGITE AQUI" onChange={e => setText(e.target.value)} />
+            <input type="text" name="text" id="text" placeholder="DIGITE AQUI" onChange={e => setText(e.target.value.toUpperCase())} />
 
             {isLoading ? (
                 <label htmlFor='video' className="disable"><FontAwesomeIcon icon={faSpinner} /> Enviando</label>

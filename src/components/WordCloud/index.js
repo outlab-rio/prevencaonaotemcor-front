@@ -8,20 +8,6 @@ import './style.css'
 
 function WordCloud(){
 
-  const wordsone = [
-    {
-      text: 'FORÇA',
-      value: 8,
-    }
-  ]
-
-  const wordstwo = [
-    {
-      text: 'SUPERAÇÃO',
-      value: 3,
-    }
-  ]
-
   const [words, setWords] = useState([]);
 
   useEffect(() => {
@@ -35,6 +21,23 @@ function WordCloud(){
     fetchData();
   }, []);
 
+  const getCallback = callbackName => (word, event) => {
+    window.open(`/depoimentos?word=${word.text}`, '_self')
+     // const isActive = callbackName !== 'onWordMouseOut'
+    // const element = event.target
+    // //const text = select(element)
+    // element
+    //   .on('click', () => {
+    //     if (isActive) {
+    //       window.open(`https://duckduckgo.com/?q=${word.text}`, '_blank')
+    //     }
+    //   })
+    //   .transition()
+    //   .attr('background', 'white')
+    //   .attr('font-size', isActive ? '300%' : '100%')
+    //   .attr('text-decoration', isActive ? 'underline' : 'none')
+  }
+
   return(
 
     <section className="words" id="words">
@@ -45,11 +48,24 @@ function WordCloud(){
 
         <div className="cloud">
 
-          {words.map(item =>
+          <ReactWordcloud words={words} options={{
+            rotations: 1,
+            rotationAngles: [0, 0],
+            colors: ['#ef7e91', '#6897ea',],
+            fontFamily: 'Asap',
+            enableTooltip: false,
+            fontSizes: [14, 42]
+          }} callbacks={{
+            onWordClick: getCallback('onWordClick'),
+            // onWordMouseOut: getCallback('onWordMouseOut'),
+            // onWordMouseOver: getCallback('onWordMouseOver'),
+          }} />
 
-            <Link to={'/depoimentos?word=' + item.text} key={item._id}>{item.text}</Link>
+          {/* {words.map(item =>
 
-          )}
+            <Link to={'/depoimentos?word=' + item.text} key={item._id} style={{fontSize: item.value * 20 + "px"}} >{item.text}</Link>
+
+          )} */}
 
         </div>
       

@@ -35,17 +35,19 @@ function App() {
   const [showModal, setshowModal] = useState(false);
   const [wordslide, setwordSlide] = useState(['coragem', 'força', 'superação', 'amor']);
 
-  function changeWord() {
-    setInterval(function() {
-      var rand = Math.floor(Math.random() * 4);
-      document.getElementById("wordone").innerHTML = wordslide[rand];
-      document.getElementById("wordtwo").innerHTML = wordslide[rand];
-      document.getElementById("wordthree").innerHTML = wordslide[rand];
-    }, 2000);
-  }
-
   useEffect(() => {
-    //changeWord();
+
+    function changeWord() {
+      setInterval(function() {
+        var rand = Math.floor(Math.random() * 4);
+        document.getElementById("wordone").innerHTML = wordslide[rand];
+        document.getElementById("wordtwo").innerHTML = wordslide[rand];
+        document.getElementById("wordthree").innerHTML = wordslide[rand];
+      }, 2000);
+    }
+
+    changeWord();
+  
   }, [])
 
   return (
